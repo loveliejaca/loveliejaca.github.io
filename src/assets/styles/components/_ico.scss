@@ -1,0 +1,117 @@
+.ico-close {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+
+  &:before,
+  &:after {
+    background-color: $color-3;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 14px;
+    border-radius: 10px;
+    left: 6px;
+    top: 1px;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.ico-plus {
+  display: inline-block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  margin: 0 11px;
+  top: 4px;
+
+  &:before,
+  &:after {
+    background-color: $color-3;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 14px;
+    border-radius: 10px;
+    left: 5px;
+    top: 0px;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.ico-arrow-left,
+.ico-arrow-right {
+  display: block;
+  width: 11px;
+  height: 11px;
+  position: relative;
+
+
+  &:before,
+  &:after {
+    background-color: $color-3;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 11px;
+    border-radius: 10px;
+    left: 0;
+    top: 0px;
+  }
+
+  &:after {
+    background-color: $color-3;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 11px;
+    height: 3px;
+    bottom: 0;
+  }
+}
+
+.ico-arrow-left {
+  transform: rotate(-45deg);
+}
+
+.ico-arrow-right {
+  transform: rotate(135deg);
+}
+
+.ico-refresh {
+  background-image: url('../../images/refresh.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 22px;
+  height: 22px;
+  margin-left: 10px;
+}
+
+.ico-star {
+  background-image: url('../../images/star.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 15px;
+  height: 15px;
+}
