@@ -1,6 +1,7 @@
 import React from "react"
 import akClinic from '../assets/images/ak-clinic.png'; // Tell webpack this JS file uses this image
 import hitto from '../assets/images/hitto.png'; // Tell webpack this JS file uses this image
+import Monster from './Monster'
 
 const Project = () => {
 
@@ -25,7 +26,7 @@ const Project = () => {
 
   return (
     <div className="l-section project">
-      <h2 class="cmn-heading"><span>Projects</span></h2>
+      <h2 className="cmn-heading"><span>Projects</span></h2>
 
       <ul className="project-list">
       {
@@ -50,6 +51,10 @@ const Project = () => {
                       <img src={item.image} alt=""/>
                     </picture>
                   </div>
+                </div>
+
+                <div className="project-info">
+                  <Monster type='monster1'/>
                 </div>
               </a>
             </li>

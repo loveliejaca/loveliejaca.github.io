@@ -3,12 +3,27 @@
   position: relative;
   width: 100%;
   margin-bottom: 50px;
+  justify-content: space-between;
 
   &:nth-child(even) {
-    justify-content: flex-end;
+
+    .cmn-web {
+      order: 2;
+    }
+
+    .project-info {
+      order: 1;
+    }
   }
 
   a {
     color: $color-3;
+    display: flex;
+    width: 100%;
   }
+}
+
+.project-info {
+  width: 40%;
+  height: 200px;
 }
