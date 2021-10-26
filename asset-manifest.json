@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b21a4d40.chunk.css",
+    "main.js": "/static/js/main.5f4e7428.chunk.js",
+    "main.js.map": "/static/js/main.5f4e7428.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ca3b3268.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ca3b3268.js.map",
+    "static/js/2.4c705f3b.chunk.js": "/static/js/2.4c705f3b.chunk.js",
+    "static/js/2.4c705f3b.chunk.js.map": "/static/js/2.4c705f3b.chunk.js.map",
+    "static/js/3.a806d0a5.chunk.js": "/static/js/3.a806d0a5.chunk.js",
+    "static/js/3.a806d0a5.chunk.js.map": "/static/js/3.a806d0a5.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.b21a4d40.chunk.css.map": "/static/css/main.b21a4d40.chunk.css.map",
+    "static/js/2.4c705f3b.chunk.js.LICENSE.txt": "/static/js/2.4c705f3b.chunk.js.LICENSE.txt",
+    "static/media/ak-clinic.25feddd9.png": "/static/media/ak-clinic.25feddd9.png",
+    "static/media/style.scss": "/static/media/star.770bcb6a.svg",
+    "static/media/hitto.18ac08cd.png": "/static/media/hitto.18ac08cd.png",
+    "static/media/lovely.66759066.jpg": "/static/media/lovely.66759066.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ca3b3268.js",
+    "static/js/2.4c705f3b.chunk.js",
+    "static/css/main.b21a4d40.chunk.css",
+    "static/js/main.5f4e7428.chunk.js"
+  ]
+}

@@ -1,3 +1,0 @@
-@function px-to-vw($px, $width: 1366) {
-  @return $px/$width * 100 + vw;
-}
