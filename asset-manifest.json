@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.3e0f586e.chunk.css",
-    "main.js": "/static/js/main.feaab65c.chunk.js",
-    "main.js.map": "/static/js/main.feaab65c.chunk.js.map",
+    "main.css": "/static/css/main.2ecfd5f6.chunk.css",
+    "main.js": "/static/js/main.a02f83fc.chunk.js",
+    "main.js.map": "/static/js/main.a02f83fc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.00786952.js",
     "runtime-main.js.map": "/static/js/runtime-main.00786952.js.map",
-    "static/js/2.13908aa0.chunk.js": "/static/js/2.13908aa0.chunk.js",
-    "static/js/2.13908aa0.chunk.js.map": "/static/js/2.13908aa0.chunk.js.map",
+    "static/js/2.9dd76c56.chunk.js": "/static/js/2.9dd76c56.chunk.js",
+    "static/js/2.9dd76c56.chunk.js.map": "/static/js/2.9dd76c56.chunk.js.map",
     "static/js/3.678c3eb2.chunk.js": "/static/js/3.678c3eb2.chunk.js",
     "static/js/3.678c3eb2.chunk.js.map": "/static/js/3.678c3eb2.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.3e0f586e.chunk.css.map": "/static/css/main.3e0f586e.chunk.css.map",
-    "static/js/2.13908aa0.chunk.js.LICENSE.txt": "/static/js/2.13908aa0.chunk.js.LICENSE.txt",
+    "static/css/main.2ecfd5f6.chunk.css.map": "/static/css/main.2ecfd5f6.chunk.css.map",
+    "static/js/2.9dd76c56.chunk.js.LICENSE.txt": "/static/js/2.9dd76c56.chunk.js.LICENSE.txt",
     "static/media/ak-clinic.25feddd9.png": "/static/media/ak-clinic.25feddd9.png",
     "static/media/circle.5dcda226.svg": "/static/media/circle.5dcda226.svg",
     "static/media/style.scss": "/static/media/triangle.b4871da0.svg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.00786952.js",
-    "static/js/2.13908aa0.chunk.js",
-    "static/css/main.3e0f586e.chunk.css",
-    "static/js/main.feaab65c.chunk.js"
+    "static/js/2.9dd76c56.chunk.js",
+    "static/css/main.2ecfd5f6.chunk.css",
+    "static/js/main.a02f83fc.chunk.js"
   ]
 }
