@@ -1,30 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ee25e4b.chunk.css",
-    "main.js": "/static/js/main.cb4d050c.chunk.js",
-    "main.js.map": "/static/js/main.cb4d050c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.00786952.js",
-    "runtime-main.js.map": "/static/js/runtime-main.00786952.js.map",
-    "static/js/2.9dd76c56.chunk.js": "/static/js/2.9dd76c56.chunk.js",
-    "static/js/2.9dd76c56.chunk.js.map": "/static/js/2.9dd76c56.chunk.js.map",
-    "static/js/3.678c3eb2.chunk.js": "/static/js/3.678c3eb2.chunk.js",
-    "static/js/3.678c3eb2.chunk.js.map": "/static/js/3.678c3eb2.chunk.js.map",
+    "main.css": "/static/css/main.1ce24293.chunk.css",
+    "main.js": "/static/js/main.56ad5c27.chunk.js",
+    "main.js.map": "/static/js/main.56ad5c27.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.01f5570a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.01f5570a.js.map",
+    "static/js/2.4ed5437e.chunk.js": "/static/js/2.4ed5437e.chunk.js",
+    "static/js/2.4ed5437e.chunk.js.map": "/static/js/2.4ed5437e.chunk.js.map",
+    "static/js/3.12b4ad49.chunk.js": "/static/js/3.12b4ad49.chunk.js",
+    "static/js/3.12b4ad49.chunk.js.map": "/static/js/3.12b4ad49.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.4ee25e4b.chunk.css.map": "/static/css/main.4ee25e4b.chunk.css.map",
-    "static/js/2.9dd76c56.chunk.js.LICENSE.txt": "/static/js/2.9dd76c56.chunk.js.LICENSE.txt",
+    "static/css/main.1ce24293.chunk.css.map": "/static/css/main.1ce24293.chunk.css.map",
+    "static/js/2.4ed5437e.chunk.js.LICENSE.txt": "/static/js/2.4ed5437e.chunk.js.LICENSE.txt",
     "static/media/ak-clinic.25feddd9.png": "/static/media/ak-clinic.25feddd9.png",
     "static/media/circle.5dcda226.svg": "/static/media/circle.5dcda226.svg",
     "static/media/style.scss": "/static/media/triangle.b4871da0.svg",
     "static/media/hitto.18ac08cd.png": "/static/media/hitto.18ac08cd.png",
     "static/media/lipple.ca926ae4.png": "/static/media/lipple.ca926ae4.png",
     "static/media/lovely.56f6da1e.png": "/static/media/lovely.56f6da1e.png",
-    "static/media/lovely.66759066.jpg": "/static/media/lovely.66759066.jpg",
-    "static/media/tri-dashed.9378eded.svg": "/static/media/tri-dashed.9378eded.svg"
+    "static/media/lovely.66759066.jpg": "/static/media/lovely.66759066.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.00786952.js",
-    "static/js/2.9dd76c56.chunk.js",
-    "static/css/main.4ee25e4b.chunk.css",
-    "static/js/main.cb4d050c.chunk.js"
+    "static/js/runtime-main.01f5570a.js",
+    "static/js/2.4ed5437e.chunk.js",
+    "static/css/main.1ce24293.chunk.css",
+    "static/js/main.56ad5c27.chunk.js"
   ]
 }
