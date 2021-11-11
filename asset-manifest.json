@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.8bd84e60.chunk.css",
-    "main.js": "/static/js/main.6a54b3f1.chunk.js",
-    "main.js.map": "/static/js/main.6a54b3f1.chunk.js.map",
+    "main.css": "/static/css/main.4d673352.chunk.css",
+    "main.js": "/static/js/main.c740f5d9.chunk.js",
+    "main.js.map": "/static/js/main.c740f5d9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ffa0db34.js",
     "runtime-main.js.map": "/static/js/runtime-main.ffa0db34.js.map",
     "static/js/2.09644e1d.chunk.js": "/static/js/2.09644e1d.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.6c75c62c.chunk.js": "/static/js/3.6c75c62c.chunk.js",
     "static/js/3.6c75c62c.chunk.js.map": "/static/js/3.6c75c62c.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.8bd84e60.chunk.css.map": "/static/css/main.8bd84e60.chunk.css.map",
+    "static/css/main.4d673352.chunk.css.map": "/static/css/main.4d673352.chunk.css.map",
     "static/js/2.09644e1d.chunk.js.LICENSE.txt": "/static/js/2.09644e1d.chunk.js.LICENSE.txt",
     "static/media/ak-clinic.25feddd9.png": "/static/media/ak-clinic.25feddd9.png",
     "static/media/circle.5dcda226.svg": "/static/media/circle.5dcda226.svg",
@@ -18,12 +18,13 @@
     "static/media/hitto.18ac08cd.png": "/static/media/hitto.18ac08cd.png",
     "static/media/lipple.ca926ae4.png": "/static/media/lipple.ca926ae4.png",
     "static/media/lovely.56f6da1e.png": "/static/media/lovely.56f6da1e.png",
-    "static/media/lovely.66759066.jpg": "/static/media/lovely.66759066.jpg"
+    "static/media/lovely.66759066.jpg": "/static/media/lovely.66759066.jpg",
+    "static/media/resume.5c6b87b9.pdf": "/static/media/resume.5c6b87b9.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.ffa0db34.js",
     "static/js/2.09644e1d.chunk.js",
-    "static/css/main.8bd84e60.chunk.css",
-    "static/js/main.6a54b3f1.chunk.js"
+    "static/css/main.4d673352.chunk.css",
+    "static/js/main.c740f5d9.chunk.js"
   ]
 }
