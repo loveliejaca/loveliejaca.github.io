@@ -1,103 +1,124 @@
 .cmn-heading {
-  font-size: 60px;
+  text-align: center;
   margin-bottom: 20px;
+  // z-index: 1;
+  position: relative;
+}
+
+.cmn-heading-text {
+  display: inline-block;
+  font-size: 11vw;
+  position: relative;
   text-align: center;
 
-  span {
-    color: $color-4;
-    text-shadow: 4px 3px 0 #5e3e55;
+  @include mq(1024, min) {
+    font-size: 115px;
+  }
+
+
+  .cmn-heading-text-inner {
+    display: block;
+    color: #fff;
     text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.cmn-heading-accent {
+  display: block;
+  position: absolute;
+  height: px-to-vw(300, 1024);
+  width: px-to-vw(300, 1024);
+  border-radius: 50%;
+  background-color: $color-1;
+
+  @include mq(1024, min) {
+    height: 300px;
+    width: 300px;
   }
 }
 
 .cmn-heading-skill {
-  span {
-    color: $color-blueish-1;
-    text-shadow: 4px 3px 0 $color-blueish-3;
-  }
-}
+  text-align: center;
 
-
-.cmn-web {
-  background-color: $color-5;
-  border-radius: 15px;
-  border: 4px solid $color-3;
-  width: 60%;
-  height: px-to-vw(250, 768);
-  overflow: hidden;
-}
-
-.cmn-web-head {
-  background-color: $color-2;
-  height: 35px;
-  width: 100%;
-  border-bottom: 4px solid $color-3;
-  padding: 0 10px 0 65px;
-  position: relative;
-
-
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #ed5154;
-    left: 9px;
-    top: 10px;
-    box-shadow: 16px 0 0 #fdd824, 33px 0 0 #2de316;
-  }
-
-  span {
+  .cmn-heading-text-inner {
     display: inline-block;
     position: relative;
-    background-color: $color-5;
-    height: 100%;
-    padding: 5px 25px 3px 12px;
-    font-weight: bold;
-    border-left: 4px solid $color-3;
-    border-right: 4px solid $color-3;
+    z-index: 1;
 
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 30px;
+      background: #000;
+      bottom: -10px;
+      z-index: 1;
+    }
+  }
+
+  .cmn-heading-accent {
+
+    @include mq(1024) {
+      right: -42%;
+      top: 0;
+    }
+
+    @include mq(1024, min) {
+      right: -200px;
+      bottom: -150px;
+    }
+    // z-index: -1;
 
   }
 }
 
-.cmn-web-address {
-  display: flex;
-  align-items: center;
-  background-color: $color-4;
-  height: 50px;
-  width: 100%;
-  border-bottom: 4px solid $color-3;
-  position: relative;
-  padding: 0 10px;
-  span {
-    background-color: $color-5;
-    border: 3px solid $color-3;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    border-radius: 20px;
-    width: 86%;
-    height: 25px;
-    font-size: 13px;
-    margin: 0 7px;
+.cmn-heading-experiment {
+  text-align: center;
+
+  .cmn-heading-accent {
+
+    @include mq(1024) {
+      left: -10%;
+      top: -27%;
+    }
+
+    @include mq(1024, min) {
+      left: -90px;
+      bottom: -75px;
+    }
   }
 }
 
+.cmn-heading-contact {
+  text-align: center;
 
-.cmn-web-body {
-  display: block;
-  height: calc(100% - 35px - 50px);
-  width: 100%;
+  .cmn-heading-accent {
+    left: 24%;
 
-  img {
-    width: 100%;
+    @include mq(1024) {
+      top: -27%;
+    }
+
+    @include mq(1024, min) {
+      bottom: -69px;
+    }
   }
-}
-
-.cmn-web-info {
-  width: 30%;
-  height: 200px;
 }

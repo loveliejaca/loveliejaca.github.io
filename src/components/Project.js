@@ -1,6 +1,7 @@
 import React from "react"
 import akClinic from '../assets/images/ak-clinic.png'; // Tell webpack this JS file uses this image
 import hitto from '../assets/images/hitto.png'; // Tell webpack this JS file uses this image
+import lipple from '../assets/images/lipple.png'; // Tell webpack this JS file uses this image
 import Monster from './Monster'
 
 const Project = () => {
@@ -18,51 +19,43 @@ const Project = () => {
       link: 'https://www.ak-co.jp/lp3/'
     },
     {
-      title: 'ooosss',
-      image: hitto,
-      link: '#'
+      title: 'Lipple inc.',
+      image: lipple,
+      link: 'https://lipple.co.jp/'
     }
   ];
 
   return (
     <div className="l-section project">
-      <h2 className="cmn-heading"><span>Projects</span></h2>
+      <div className="l-container">
+      <div className="cmn-heading cmn-heading-project">
+        <h2 className="cmn-heading-text">
+          <span className="cmn-heading-text-inner">PROJECTS</span>
+          <span className="cmn-heading-accent"></span>
+        </h2>
+      </div>
 
-      <ul className="project-list">
-      {
-        projectList.map((item, index) => {
-          return (
-            <li className="project-item" key={index}>
-              <a href={item.link} target="_blank">
-                <div className="cmn-web">
-                  <div className="cmn-web-head">
-                    <span>{item.title} <i className="ico-close"></i></span>
-                     <i className="ico-plus"></i>
-                  </div>
-                  <div className="cmn-web-address">
-                    <i className="ico-arrow-left"></i>
-                    <i className="ico-arrow-right"></i>
-                    <i className="ico-refresh"></i>
-                    <span>{item.link} </span>
-                    <i className="ico-star"></i>
-                  </div>
-                  <div className="cmn-web-body">
+        <ul className="project-list">
+        {
+          projectList.map((item, index) => {
+            return (
+              <li className="project-item" key={index}>
+                <a href={item.link} target="_blank">
+                  <div className="project-thumb">
                     <picture>
-                      <img src={item.image} alt=""/>
+                      <img src={item.image} alt={item.title}/>
                     </picture>
+
+                    <h3 className="project-name">{item.title}</h3>
                   </div>
-                </div>
+                </a>
+              </li>
+            )
+          })
+        }
 
-                <div className="project-info">
-                  <Monster type='monster1'/>
-                </div>
-              </a>
-            </li>
-          )
-        })
-      }
-
-      </ul>
+        </ul>
+      </div>
     </div>
   )
 }

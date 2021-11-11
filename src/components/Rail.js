@@ -34,26 +34,16 @@ const Rail = ({text, modifier}) => {
 
 
   useEffect(() => {
-    const rail = document.querySelectorAll('.rail');
+    const $rail = document.querySelector('.rail');
 
-    rail.forEach((element, index) => {
-      if(!element) return;
+    if(!$rail) return;
 
-      const track = element.querySelectorAll('.rail-track')
-      const trackContainer = element.querySelector('.rail-container');
-      // const initialWidth = element.getBoundingClientRect().width
-      // const targetWidth = initialWidth * count;
-      // const targetListCount = Math.ceil(targetWidth / initialWidth);
-      //
-      // console.log("allala", initialWidth, targetWidth, targetListCount);
+    setTextArr([...Array(count).keys()]);
 
-      setTextArr([...Array(count).keys()]);
+    requestAnimationFrame(() => {
+      railMove($rail)
+    })
 
-      requestAnimationFrame(() => {
-        railMove(element)
-      })
-
-    });
 
     function railMove(element) {
       let trackElement = element.querySelector('.rail-track');

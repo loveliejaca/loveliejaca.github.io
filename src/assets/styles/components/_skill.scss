@@ -1,11 +1,181 @@
 
-.skills {
-  background-color: #1f2339
+.skill-set {
+  background-color: #dbdbdb;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  opacity: 0;
+  font-weight: 900;
+  padding: 8px 10px;
+  line-height: 1;
+  border-radius: 5px;
+  box-shadow: 2px 1px 0 #fff, 3px 2px 0 #fdfdfd, 6px 3px 0 #f5f3f3, 5px 4px 0 #e7e7e7, 6px 5px 0 #c9c9c9, 9px 6px 1px rgb(0 0 0 / 0%), 9px 0 5px rgb(0 0 0 / 10%), 6px 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%), 0 20px 20px rgb(0 0 0 / 15%);
+  z-index: 1;
+  color: $base-color;
+  transform: translateX(-30px);
+  text-align: center;
+
+  @include mq(1024) {
+    margin: 0 10px 20px;
+  }
+
+  @include mq(1024, min) {
+    display: block;
+    position: absolute;
+  }
+
+  &.skill-set-html {
+
+    font-size: 50px;
+    background-color: $color-2;
+
+    @include mq(1024, min) {
+      top: -36%;
+      left: 0;
+    }
+  }
+
+  &.skill-set-css {
+
+    font-size: 50px;
+    background-color:  $color-2;
+
+    @include mq(1024, min) {
+      top: 5%;
+      left: 97%;
+    }
+  }
+
+  &.skill-set-scss {
+    font-size: 50px;
+    background-color:  $color-2;
+
+    @include mq(1024, min) {
+      top: 30%;
+      left: -180px;
+    }
+  }
+
+  &.skill-set-javascript {
+    font-size: 30px;
+    background-color:  $color-1;
+
+    @include mq(1024, min) {
+      top: -25%;
+      left: 56%;
+    }
+  }
+
+  &.skill-set-wordpress {
+
+    font-size: 30px;
+    background-color:  $color-1;
+
+    @include mq(1024, min) {
+      top: 105%;
+      left: -10%;
+    }
+  }
+
+  &.skill-set-react {
+    font-size: 25px;
+    background-color:  $color-1;
+
+    @include mq(1024, min) {
+      top: 55%;
+      left: 103%;
+    }
+  }
+
+  &.skill-set-vue {
+
+    font-size: 25px;
+    background-color:  $color-1;
+
+    @include mq(1024, min) {
+      top: 2%;
+      left: -70px;
+    }
+  }
+
+  &.skill-set-php {
+    font-size: 18px;
+
+    @include mq(1024, min) {
+      top: 100%;
+      left: 100%;
+    }
+  }
+
+  &.skill-set-mysql {
+
+    font-size: 18px;
+
+    @include mq(1024, min) {
+      top: 69%;
+      left: -90px;
+    }
+  }
 }
 
-.skill-list {
+.is-animate {
+  .skill-set-html {
+    animation: opacity .7s ease .8s forwards
+  }
+
+  .skill-set-css {
+    animation: opacity .7s ease 1.3s forwards
+  }
+
+  .skill-set-scss {
+    animation: opacity .7s ease 1.8s forwards
+  }
+
+  .skill-set-javascript {
+    animation: opacity .7s ease 1.5s forwards
+  }
+
+  .skill-set-wordpress {
+    animation: opacity .7s ease 1.8s forwards
+  }
+
+  .skill-set-react {
+    animation: opacity .7s ease 2s forwards
+  }
+
+  .skill-set-vue {
+    animation: opacity .7s ease 2.7s forwards
+  }
+
+  .skill-set-php {
+    animation: opacity .7s ease 2.6s forwards
+  }
+
+  .skill-set-mysql {
+    animation: opacity .7s ease 3.1s forwards
+  }
+}
+
+.skill-trigger {
   display: block;
-  max-width: 700px;
+  margin-top: 20px;
+  position: relative;
+  height: 10px;
   width: 100%;
-  margin: 0 auto;
+
+  @include mq(1024, min) {
+    margin-top: 100px;
+    height: 30px;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

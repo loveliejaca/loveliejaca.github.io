@@ -1,0 +1,217 @@
+.experiment-me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+
+  @include mq(1024, min) {
+    padding-top: 50px;
+  }
+}
+
+.experiment-box-wrap {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  height: 100%;
+  margin-bottom: 30px;
+  left: 0;
+
+  width: 100%;
+  z-index: 1;
+
+
+  @include mq(1024, min) {
+    position: absolute;
+    margin-top: 45px;
+    margin-bottom: 0;
+    top: 80px;
+  }
+}
+
+.experiment-img {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.experiment-box {
+  border-radius: 7px;
+  width: px-to-vw(230, 600);
+  height: px-to-vw(230, 600);
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+  margin: 0 1.5% 5%;
+
+
+
+  @include mq(768, min) {
+    width: px-to-vw(150, 600);
+    height: px-to-vw(150, 600);
+  }
+
+  @include mq(1024, min) {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+  }
+  //
+  // @include mq(1024) {
+  //   position: absolute;
+  //   width: 220px;
+  //   height: 220px;
+  // }
+
+  // @include mq(768, min) {
+  //   width: 220px;
+  //   height: 220px;
+  // }
+  //
+  // @include mq(1024) {
+  //   margin: 0 2% 10%;
+  // }
+  //
+  // @include mq(560) {
+  //   width: 140px;
+  //   height: 140px;
+  // }
+  //
+  // @include mq(360) {
+  //   width: 120px;
+  //   height: 120px;
+  // }
+
+
+  svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+
+    left: 0;
+
+    fill: none;
+    pointer-events: none;
+
+
+    .circle {
+      stroke-dasharray: 35;
+      stroke-width: 5;
+      stroke: #fff;
+    }
+  }
+
+
+  &:hover {
+    svg {
+      animation: rotate 20s linear infinite;
+    }
+  }
+
+
+  img {
+    width: 100%;
+  }
+
+
+   &.box-4,
+   &.box-5 {
+
+     @include mq(1024, min) {
+       top: 220px;
+     }
+   }
+   &.box-6,
+   &.box-7 {
+     @include mq(1024, min) {
+       top: 480px;
+     }
+
+   }
+
+   &.box-1 {
+     @include mq(1024, min) {
+       left: 41%;
+       top: -21%;
+     }
+
+      .experiment-img {
+        background-image: url('../../images/exp1.png');
+      }
+   }
+   &.box-2 {
+     @include mq(1024, min) {
+        left: 15%;
+     }
+
+      .experiment-img {
+        background-image: url('../../images/exp2.png');
+      }
+   }
+   &.box-3 {
+     @include mq(1024, min) {
+      right: 15%;
+     }
+
+      .experiment-img {
+        background-image: url('../../images/exp3.png');
+      }
+   }
+   &.box-4 {
+     @include mq(1024, min) {
+        left: 0;
+     }
+      .experiment-img {
+        background-image: url('../../images/exp4.png');
+      }
+   }
+   &.box-5 {
+     @include mq(1024, min) {
+        right: 0;
+     }
+      .experiment-img {
+        background-image: url('../../images/exp5.png');
+      }
+   }
+   &.box-6 {
+     @include mq(1024, min) {
+        left: 8%;
+     }
+      .experiment-img {
+        background-image: url('../../images/exp6.png');
+      }
+   }
+   &.box-7 {
+     @include mq(1024, min) {
+        right: 8%;
+     }
+      .experiment-img {
+        background-image: url('../../images/exp7.png');
+      }
+   }
+
+}
+
+.experiment-box-inner {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,29 +1,61 @@
-.project-item {
+.project-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.project-item {
+  display: block;
   position: relative;
   width: 100%;
   margin-bottom: 50px;
   justify-content: space-between;
+  margin-bottom: 100px;
 
-  &:nth-child(even) {
+  a {
+    display: flex;
+    position: relative;
+  }
 
-    .cmn-web {
-      order: 2;
-    }
-
-    .project-info {
-      order: 1;
+  &:nth-child(odd) {
+    a {
+      justify-content: flex-start;
     }
   }
 
-  a {
-    color: $color-3;
-    display: flex;
+  &:nth-child(even) {
+    a {
+      justify-content: flex-end;
+    }
+  }
+
+}
+
+.project-thumb {
+  position: relative;
+  width: 47%;
+
+  picture {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  img {
     width: 100%;
   }
 }
 
-.project-info {
-  width: 40%;
-  height: 200px;
+.project-name {
+  display: block;
+  position: absolute;
+  color: $color-2;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  z-index: 1;
+  left: -20px;
+  bottom: -45px;
+  transition: all 0.3s ease-out;
 }

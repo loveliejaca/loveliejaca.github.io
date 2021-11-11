@@ -50,7 +50,7 @@ export default function Galaxy() {
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setPixelRatio((window.devicePixelRatio) ? window.devicePixelRatio : 1);
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.autoClear = false;
+    renderer.autoClear = true;
     renderer.setClearColor(0x000000, 0.0);
     canvas.current.appendChild(renderer.domElement);
 
@@ -137,10 +137,19 @@ export default function Galaxy() {
     mouseY = e.clientY - windowHalfY;
   }
 
+  function onWindowResize() {
+    if(!camera) return;
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  }
+
   useLayoutEffect(() => {
     init();
     animate();
   });
+
+  window.addEventListener('resize', onWindowResize);
 
   return (
     <div className="galaxy" ref={canvas}></div>

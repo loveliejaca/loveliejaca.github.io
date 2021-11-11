@@ -1,34 +1,40 @@
 import './assets/styles/style.scss'
 
 
+import Header from "./components/Header"
 import Mv from "./components/Mv"
 import Skills from "./components/Skills"
 import Project from "./components/Project"
 import About from "./components/About"
-import Galaxy from "./components/Galaxy"
-// import AnimationHeart from "./components/AnimationHeart"
+import Contact from "./components/Contact"
+import Experiment from "./components/Experiment"
 
 function App() {
   return (
     <div className="l-wrapper">
-        <Galaxy/>
+        <Header/>
       <div className="bg"></div>
-      <main className="l-main">
+      <main className="l-main" id="home">
         <Mv/>
-        <Skills/>
-        <About/>
-
-        <section className="l-section experiments">
-          <div className="l-container">
-            <h2 className="cmn-heading cmn-heading-expe"><span>Experiments</span></h2>
-          </div>
-
+        <section className="l-section" id="skills">
+          <Skills/>
         </section>
 
+        <section className="l-section" id="experiment">
+          <Experiment/>
+        </section>
 
-        <Project/>
+        <section className="l-section" id="contact">
+          <Contact/>
+        </section>
 
       </main>
+      <footer className="l-footer">
+        <div className="footer-logo"></div>
+        <div className="footer-email">
+          <a href="jlablab@gmail.com">jlablab@gmail.com</a>
+        </div>
+      </footer>
     </div>
   );
 }

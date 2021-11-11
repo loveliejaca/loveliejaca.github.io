@@ -1,0 +1,165 @@
+
+.parallax {
+  background-color: $color-2;
+  display: block;
+  position: absolute;
+  border-radius: 50%
+}
+
+.parallax-mv1 {
+  width: 60%;
+  height: 60%;
+  left: -13%;
+  top: -10%;
+}
+.parallax-mv2 {
+  width: 35%;
+  height: 35%;
+  top: 80%;
+}
+.parallax-mv3 {
+  width: 10%;
+  height: 10%;
+  top: 95%;
+  left: 95%;
+}
+.parallax-mv4 {
+width: 5%;
+  height: 5%;
+  top: -1%;
+  left: 85%;
+}
+.parallax-mv5 {
+  width: 15%;
+  height: 15%;
+  top: -13%;
+  left: 155%;
+}
+
+
+.parallax-skill1 {
+  padding-bottom: 15%;
+  width: 15%;
+  height: 1px;
+  right: 10%;
+  top: -7%;
+  z-index: 1;
+}
+
+.parallax-skill2 {
+  padding-bottom: 2%;
+  width: 2%;
+  height: 1px;
+  left: 20%;
+  top: 15%;
+}
+
+.parallax-skill3 {
+  padding-bottom: 18%;
+  width: 18%;
+  height: 1px;
+  left: 16%;
+  top: 42%;
+}
+
+
+.parallax-skill4 {
+  padding-bottom: 5%;
+  width: 5%;
+  height: 1px;
+  left: 55%;
+  top: 14%;
+}
+
+.parallax-expe1 {
+  padding-bottom: 15%;
+  width: 15%;
+  height: 1px;
+  left: 14%;
+  top: -15%;
+  z-index: 1;
+}
+
+
+.parallax-expe2 {
+  padding-bottom: 3%;
+  width: 3%;
+  height: 1px;
+  left: 54%;
+  top: -30%;
+}
+
+.parallax-expe3 {
+  padding-bottom: 7%;
+  width: 7%;
+  height: 1px;
+  left: 67%;
+  top: -13%;
+}
+
+.parallax-expe4 {
+  padding-bottom: 4%;
+  width: 4%;
+  height: 1px;
+  left: 6%;
+  top: 3%;
+}
+
+.parallax-contact1 {
+  padding-bottom: 15%;
+  width: 15%;
+  height: 1px;
+  left: 31%;
+  top: -199%;
+  z-index: 1;
+
+  @include mq(1024, min) {
+    top: -99%;
+  }
+}
+
+.parallax-contact2 {
+  padding-bottom: 8%;
+  width: 8%;
+  height: 1px;
+  left: 61%;
+  top: -195%;
+  z-index: 1;
+
+  @include mq(1024, min) {
+    top: -105%;
+  }
+}
+
+
+.parallax-contact3 {
+  padding-bottom: 5%;
+  width: 5%;
+  height: 1px;
+  left: 18%;
+  top: -150%;
+  z-index: 1;
+
+  @include mq(1024, min) {
+    top: -50%;
+  }
+}
+
+
+.parallax-contact4 {
+  padding-bottom: 3%;
+  width: 3%;
+  height: 1px;
+  left: 71%;
+  top: -65%;
+  z-index: 1;
+}
+
+.parallax-contact5 {
+  padding-bottom: 2%;
+  width: 2%;
+  height: 1px;
+  left: 17%;
+  top: -93%;
+  z-index: 1;
+}
