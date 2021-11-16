@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.37f26d43.chunk.css",
-    "main.js": "/static/js/main.60f4ae31.chunk.js",
-    "main.js.map": "/static/js/main.60f4ae31.chunk.js.map",
+    "main.css": "/static/css/main.2861dba8.chunk.css",
+    "main.js": "/static/js/main.d159bfbb.chunk.js",
+    "main.js.map": "/static/js/main.d159bfbb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ffa0db34.js",
     "runtime-main.js.map": "/static/js/runtime-main.ffa0db34.js.map",
     "static/js/2.09644e1d.chunk.js": "/static/js/2.09644e1d.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.6c75c62c.chunk.js": "/static/js/3.6c75c62c.chunk.js",
     "static/js/3.6c75c62c.chunk.js.map": "/static/js/3.6c75c62c.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.37f26d43.chunk.css.map": "/static/css/main.37f26d43.chunk.css.map",
+    "static/css/main.2861dba8.chunk.css.map": "/static/css/main.2861dba8.chunk.css.map",
     "static/js/2.09644e1d.chunk.js.LICENSE.txt": "/static/js/2.09644e1d.chunk.js.LICENSE.txt",
     "static/media/ak-clinic.ee4f80b5.png": "/static/media/ak-clinic.ee4f80b5.png",
     "static/media/circle.5dcda226.svg": "/static/media/circle.5dcda226.svg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.ffa0db34.js",
     "static/js/2.09644e1d.chunk.js",
-    "static/css/main.37f26d43.chunk.css",
-    "static/js/main.60f4ae31.chunk.js"
+    "static/css/main.2861dba8.chunk.css",
+    "static/js/main.d159bfbb.chunk.js"
   ]
 }
