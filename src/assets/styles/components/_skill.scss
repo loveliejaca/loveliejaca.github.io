@@ -19,6 +19,10 @@
     margin: 0 10px 20px;
   }
 
+  @include mq(768) {
+    margin: 0 10px 10px;
+  }
+
   @include mq(1024, min) {
     display: block;
     position: absolute;
@@ -26,10 +30,11 @@
 
   &.skill-set-html {
 
-    font-size: 50px;
+    font-size: 30px;
     background-color: $color-2;
 
     @include mq(1024, min) {
+      font-size: 50px;
       top: -36%;
       left: 0;
     }
@@ -37,30 +42,33 @@
 
   &.skill-set-css {
 
-    font-size: 50px;
+    font-size: 30px;
     background-color:  $color-2;
 
     @include mq(1024, min) {
+      font-size: 50px;
       top: 5%;
       left: 97%;
     }
   }
 
   &.skill-set-scss {
-    font-size: 50px;
+    font-size: 30px;
     background-color:  $color-2;
 
     @include mq(1024, min) {
+        font-size: 50px;
       top: 30%;
       left: -180px;
     }
   }
 
   &.skill-set-javascript {
-    font-size: 30px;
+    font-size: 20px;
     background-color:  $color-1;
 
     @include mq(1024, min) {
+      font-size: 30px;
       top: -25%;
       left: 56%;
     }
@@ -68,20 +76,22 @@
 
   &.skill-set-wordpress {
 
-    font-size: 30px;
+    font-size: 20px;
     background-color:  $color-1;
 
     @include mq(1024, min) {
+      font-size: 30px;
       top: 105%;
       left: -10%;
     }
   }
 
   &.skill-set-react {
-    font-size: 25px;
+    font-size: 15px;
     background-color:  $color-1;
 
     @include mq(1024, min) {
+      font-size: 25px;
       top: 55%;
       left: 103%;
     }
@@ -89,29 +99,32 @@
 
   &.skill-set-vue {
 
-    font-size: 25px;
+    font-size: 15px;
     background-color:  $color-1;
 
     @include mq(1024, min) {
+      font-size: 25px;
       top: 2%;
       left: -70px;
     }
   }
 
   &.skill-set-php {
-    font-size: 18px;
+    font-size: 12px;
 
     @include mq(1024, min) {
       top: 100%;
       left: 100%;
+      font-size: 18px;
     }
   }
 
   &.skill-set-mysql {
 
-    font-size: 18px;
+    font-size: 12px;
 
     @include mq(1024, min) {
+      font-size: 18px;
       top: 69%;
       left: -90px;
     }

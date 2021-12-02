@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  overflow: hidden;
+}
+
 body, html {
   background: $base-color;
   scroll-behavior: smooth;

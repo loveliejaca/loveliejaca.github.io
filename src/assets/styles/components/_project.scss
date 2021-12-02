@@ -1,61 +1,359 @@
-.project-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 50px;
+.project-box {
+  position: relative;
+  margin: 50px auto 0;
+  display: block;
+
+
+
+  @include mq(980, min) {
+    width: 520px;
+    height: 520px;
+    padding: 20px;
+    border-radius: 50%;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: rotate 50s linear infinite;
+    animation-direction: reverse;
+
+    display: none;
+
+    @include mq(980, min) {
+      display: block;
+    }
+
+    .circle {
+      fill: none;
+      stroke: $color-1;
+      stroke-width: 4;
+      stroke-dasharray: 24;
+    }
+  }
 }
 
-.project-item {
-  display: block;
+
+.project-img-box {
+  border-radius: 50%;
   position: relative;
+  background-color: $color-1;
   width: 100%;
-  margin-bottom: 50px;
-  justify-content: space-between;
-  margin-bottom: 100px;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+
+  @include mq(980, min) {
+    display: block;
+  }
+}
+
+.project-list {
+  @include mq(980) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    justify-content: center;
+  }
+}
+
+.project-item  {
+  position: relative;
+  z-index: 1;
+
+  @include mq(980, min) {
+    position: absolute;
+  }
+
+  @include mq(980) {
+    margin: 0 5%;
+    width: calc(80% / 2);
+    margin-bottom: 50px;
+  }
 
   a {
-    display: flex;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
     position: relative;
-  }
+    display: block;
+    text-align: center;
 
-  &:nth-child(odd) {
-    a {
-      justify-content: flex-start;
+    @include mq(980, min) {
+      font-size: 25px;
+    }
+
+
+    &:hover {
+      .project-name {
+        &:before {
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
     }
   }
 
-  &:nth-child(even) {
-    a {
-      justify-content: flex-end;
+
+
+  &.project-item1 {
+
+    @include mq(980, min) {
+      left: -30%;
+      top: 38%;
     }
   }
 
-}
+  &.project-item2 {
+    @include mq(980, min) {
+      right: -35%;
+      top: 79%;
+    }
 
-.project-thumb {
-  position: relative;
-  width: 47%;
-
-  picture {
-    position: relative;
-    height: 100%;
-    width: 100%;
   }
 
-  img {
-    width: 100%;
+  &.project-item3 {
+    @include mq(980, min) {
+      right: -5%;
+      top: -1%;
+    }
   }
 }
 
 .project-name {
-  display: block;
-  position: absolute;
-  color: $color-2;
-  font-size: 25px;
   font-weight: 900;
-  letter-spacing: 0.07em;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0);
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $color-1;
+    transition: transform 0.3s cubic-bezier(0.15, 1.2, 1, 1);
+    transform-origin: center;
+  }
+  span {
+    display: block;
+    position: relative;
+  }
+}
+
+.project-img {
+  position: absolute;
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease-out;
+
+
+  picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &.is-active {
+    opacity: 1;
+  }
+}
+
+.project-thumb {
+  display: block;
+  width: 100%;
+  height: px-to-vw(350,980);
+  border-radius: 50%;
+  margin-bottom: 30px;
+  padding: 10px;
+  position: relative;
+
+
+  @include mq(980, min) {
+    display: none;
+  }
+
+  picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: rotate 50s linear infinite;
+    animation-direction: reverse;
+
+    .circle {
+      fill: none;
+      stroke: $color-1;
+      stroke-width: 6;
+      stroke-dasharray: 30;
+    }
+  }
+}
+
+.project-img-accent {
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   z-index: 1;
-  left: -20px;
-  bottom: -45px;
-  transition: all 0.3s ease-out;
+  pointer-events: none;
+  animation: rotate 40s linear infinite;
+  display: none;
+
+  @include mq(980, min) {
+    display: block;
+  }
+
+
+  span {
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $color-2;
+
+    &:nth-child(1) {
+      height: 40px;
+      width: 40px;
+     left: 19%;
+    }
+
+    &:nth-child(2) {
+      height: 10px;
+      width: 10px;
+      left: 32%;
+      top: -3%;
+    }
+
+    &:nth-child(3) {
+      background-color: $color-1;
+      height: 22px;
+      width: 22px;
+      left: 24%;
+      top: 9%;
+    }
+
+    &:nth-child(4) {
+      background-color: #fff;
+      height: 6px;
+      width: 6px;
+      left: 21%;
+      top: 10%;
+    }
+
+
+    &:nth-child(5) {
+      background-color: #fff;
+      height: 30px;
+      width: 30px;
+      left: 21%;
+      top: 95%;
+    }
+
+    &:nth-child(6) {
+      height: 45px;
+      width: 45px;
+      left: 82%;
+      top: 75%;
+    }
+
+    &:nth-child(7) {
+      height: 20px;
+      width: 20px;
+      left: 102%;
+      top: 59%;
+    }
+
+    &:nth-child(8) {
+      background-color: $color-1;
+      height: 5px;
+      width: 5px;
+      left: 99%;
+      top: 61%;
+    }
+
+    &:nth-child(9) {
+      height: 18px;
+      width: 18px;
+      left: 93%;
+      top: 51%;
+    }
+
+    &:nth-child(10) {
+      background-color: #fff;
+      height: 15px;
+      width: 15px;
+      left: 89%;
+      top: 61%;
+    }
+
+    &:nth-child(11) {
+      background-color: $color-1;
+      height: 10px;
+      width: 10px;
+      left: 14%;
+      top: 84%;
+
+    }
+
+    &:nth-child(12) {
+      height: 20px;
+      width: 20px;
+      left: 21%;
+      top: 90%;
+    }
+  }
+}
+
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate_reverse {
+  from {
+    transform: rotate(3600deg);
+  }
+  to {
+    transform: rotate(0);
+  }
 }

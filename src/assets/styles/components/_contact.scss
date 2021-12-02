@@ -28,6 +28,7 @@
   width: 100%;
   max-width: 550px;
   position: relative;
+  z-index: 1;
 
 }
 
@@ -60,6 +61,13 @@
       stroke-dasharray: 50px 50px;
     }
   }
+
+  &:hover {
+    svg {
+      animation-play-state: paused !important;
+    }
+  }
+
   &:nth-child(1),
   &:nth-child(3) {
     svg {

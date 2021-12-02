@@ -146,11 +146,11 @@ const Experiment = () => {
 
   return (
     <>
-      <Parallax total="4" modifier="expe"/>
+      <Parallax total="8" modifier="expe"/>
       <div className="l-container">
         <div className="cmn-heading cmn-heading-experiment">
           <h2 className="cmn-heading-text">
-            <span className="cmn-heading-text-inner">EXPERIMENTS</span>
+            <span className="cmn-heading-text-inner">&#60;Code&#62;</span>
             <span className="cmn-heading-accent"></span>
           </h2>
         </div>

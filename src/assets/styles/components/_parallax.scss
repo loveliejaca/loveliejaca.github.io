@@ -3,7 +3,7 @@
   background-color: $color-2;
   display: block;
   position: absolute;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 .parallax-mv1 {
@@ -34,6 +34,44 @@ width: 5%;
   height: 15%;
   top: -13%;
   left: 155%;
+}
+
+.parallax-mv6 {
+  width: 15%;
+  height: 15%;
+  top: 56%;
+  left: -44%;
+}
+
+
+.parallax-mv7 {
+  width: 7%;
+  height: 7%;
+  top: 30%;
+  left: 210%;
+}
+
+
+.parallax-mv8 {
+  width: 18%;
+  height: 18%;
+  top: 78%;
+  left: 230%;
+}
+
+.parallax-mv9 {
+  width: 3%;
+  height: 3%;
+  top: 87%;
+  left: 167%;
+}
+
+
+.parallax-mv10 {
+  width: 3%;
+  height: 3%;
+  top: -20%;
+  left: -37%;
 }
 
 
@@ -71,6 +109,48 @@ width: 5%;
   top: 14%;
 }
 
+
+.parallax-skill5 {
+  padding-bottom: 8%;
+  width: 8%;
+  height: 1px;
+  left: 100%;
+  top: 35%;
+}
+
+.parallax-skill6 {
+  padding-bottom: 5%;
+  width: 5%;
+  height: 1px;
+  left: -8%;
+  top: 23%;
+}
+
+.parallax-skill7 {
+  padding-bottom: 3%;
+  width: 3%;
+  height: 1px;
+  left: 114%;
+  top: 0%;
+}
+
+
+.parallax-skill8 {
+  padding-bottom: 12%;
+  width: 12%;
+  height: 1px;
+  left: 110%;
+  top: 77%;
+}
+
+.parallax-skill9 {
+  padding-bottom: 2%;
+  width: 2%;
+  height: 1px;
+  left: -16%;
+  top: 70%;
+}
+
 .parallax-expe1 {
   padding-bottom: 15%;
   width: 15%;
@@ -101,9 +181,107 @@ width: 5%;
   padding-bottom: 4%;
   width: 4%;
   height: 1px;
-  left: 6%;
+  left: -6%;
   top: 3%;
 }
+
+
+.parallax-expe5 {
+  padding-bottom: 5%;
+  width: 5%;
+  height: 1px;
+  left: 83%;
+  top: -37%;
+}
+
+.parallax-expe6 {
+  padding-bottom: 7%;
+  width: 7%;
+  height: 1px;
+  left: -23%;
+  top: 22%;
+}
+
+.parallax-expe7 {
+  padding-bottom: 4%;
+  width: 4%;
+  height: 1px;
+  left: 105%;
+  top: 23%;
+}
+
+.parallax-project1 {
+  padding-bottom: 15%;
+  width: 15%;
+  height: 1px;
+  left: 58%;
+  top: -99%;
+  z-index: 1;
+}
+
+.parallax-project2 {
+  padding-bottom: 7%;
+  width: 7%;
+  height: 1px;
+  left: 95%;
+  top: -67%;
+}
+.parallax-project3 {
+  padding-bottom: 3%;
+  width: 3%;
+  height: 1px;
+  left: 15%;
+  top: -101%;
+}
+.parallax-project4 {
+  padding-bottom: 2%;
+  width: 2%;
+  height: 1px;
+  left: 49%;
+  top: -90%;
+}
+
+.parallax-project5 {
+  padding-bottom: 10%;
+  width: 10%;
+  height: 1px;
+  left: -2%;
+  top: -70%;
+}
+
+.parallax-project6 {
+  padding-bottom: 5%;
+  width: 5%;
+  height: 1px;
+  left: -5%;
+  top: -7%;
+}
+
+
+.parallax-project7 {
+  padding-bottom: 3%;
+  width: 3%;
+  height: 1px;
+  left: 86%;
+  top: -21%;
+}
+
+.parallax-project8 {
+  padding-bottom: 8%;
+  width: 8%;
+  height: 1px;
+  left: -35%;
+  top: -4%;
+}
+
+.parallax-project9 {
+  padding-bottom: 12%;
+  width: 12%;
+  height: 1px;
+  left: 108%;
+  top: 25%;
+}
+
 
 .parallax-contact1 {
   padding-bottom: 15%;
@@ -114,7 +292,7 @@ width: 5%;
   z-index: 1;
 
   @include mq(1024, min) {
-    top: -99%;
+    top: -137%;
   }
 }
 
@@ -127,7 +305,7 @@ width: 5%;
   z-index: 1;
 
   @include mq(1024, min) {
-    top: -105%;
+    top: -139%;
   }
 }
 
@@ -141,7 +319,7 @@ width: 5%;
   z-index: 1;
 
   @include mq(1024, min) {
-    top: -50%;
+    top: -97%;
   }
 }
 
@@ -160,6 +338,6 @@ width: 5%;
   width: 2%;
   height: 1px;
   left: 17%;
-  top: -93%;
+  top: -132%;
   z-index: 1;
 }

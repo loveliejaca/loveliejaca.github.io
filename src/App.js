@@ -24,9 +24,15 @@ function App() {
           <Experiment/>
         </section>
 
+        <section className="l-section" id="project">
+          <Project/>
+        </section>
+
         <section className="l-section" id="contact">
           <Contact/>
         </section>
+
+
 
       </main>
       <footer className="l-footer">

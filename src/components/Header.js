@@ -29,6 +29,8 @@ const Header = () => {
                   smooth={true}
                   offset={0}
                   duration={120}
+
+                  onClick={handleClick}
                 >
                   <span>Home</span>
               </Link>
@@ -41,6 +43,7 @@ const Header = () => {
                   smooth={true}
                   offset={0}
                   duration={120}
+                  onClick={handleClick}
                 >
                   <span>Skills</span>
               </Link>
@@ -53,8 +56,9 @@ const Header = () => {
                   smooth={true}
                   offset={0}
                   duration={120}
+                  onClick={handleClick}
                 >
-                  <span>Experiments</span>
+                  <span>Code</span>
               </Link>
             </li>
             <li className="header-nav-item">
@@ -65,6 +69,7 @@ const Header = () => {
                   smooth={true}
                   offset={0}
                   duration={120}
+                  onClick={handleClick}
                 >
                   <span>Contact</span>
               </Link>

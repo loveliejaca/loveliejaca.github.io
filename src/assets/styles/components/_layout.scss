@@ -45,7 +45,8 @@
   left: 0;
   width: 100%;
   z-index: 10;
-
+  pointer-events: none;
+  // opacity: 0;
 }
 
 .header-menu {
@@ -55,6 +56,7 @@
   position: absolute;
   right: -200px;
   top: -200px;
+  pointer-events: auto;
 
   svg {
     width: 100%;
@@ -65,7 +67,12 @@
 
     .circle {
       stroke: $color-1;
-      stroke-dasharray: 30;
+      stroke-width: 6px;
+      stroke-dasharray: 33;
+    }
+
+    @include mq(768) {
+      transform: scale(.5);
     }
   }
 
@@ -74,6 +81,7 @@
       transform: scale(1.1);
 
       .circle {
+        stroke-width: 4px;
         stroke-dasharray: 25;
       }
     }
@@ -92,6 +100,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  pointer-events: auto;
 
   &:before {
     content: '';
@@ -110,6 +119,10 @@
     .is-open & {
       transform: scale(1);
     }
+
+    @include mq(768) {
+      transform: scale(.45);
+    }
   }
 
 
@@ -123,6 +136,12 @@
   width: 40px;
   height: 30px;
   cursor: pointer;
+  pointer-events: auto;
+
+  @include mq(768) {
+    right: 10px;
+    top: 10px;
+  }
 
   span {
     display: block;
