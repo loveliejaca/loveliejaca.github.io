@@ -1,0 +1,39 @@
+//import the common styles
+@import '../../styles/styles';
+
+.fixed {
+	position: fixed;
+}
+
+.relative {
+	position: relative;
+}
+
+.abosulute {
+	position: relative;
+}
+
+.railtext {
+	display: block;
+	overflow: hidden;
+}
+
+.railtext__vertical {
+	width: rem(200);
+	height: 100dvh;
+
+	.railtext__text {
+		width: inherit;
+	}
+}
+
+.railtext__text {
+	display: block;
+	font-size: rem(220);
+	font-weight: 800;
+	line-height: 1;
+	text-align: center;
+	white-space: break-spaces;
+	word-break: break-all;
+	color: var(--color-4);
+}

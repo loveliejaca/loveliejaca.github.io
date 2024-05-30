@@ -1,0 +1,9 @@
+//import the common styles
+@import '../styles/styles.scss';
+
+.railtext_container {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: rem(24);
+}

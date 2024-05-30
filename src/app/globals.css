@@ -1,0 +1,33 @@
+:root {
+  --foreground: 0, 0, 0;
+
+  --color-1: #f0e9e3;
+  --color-2: #dea986;
+  --color-3: #020101;
+  --color-4: #82746a;
+  /* ;
+  --color-5: #5f2f11; */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--color-3);
+  background-color: var(--color-1);
+  min-height: 100dvh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
