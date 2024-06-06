@@ -16,7 +16,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    env: # Env variables needed during build
+      NEXT_PUBLIC_AIRTABLE_API_KEY:  ${{secrets.NEXT_PUBLIC_AIRTABLE_API_KEY}}
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -30,10 +31,7 @@ jobs:
           static_site_generator: next
 
       - name: Build with Next.js 🏗️
-        run: |
-          touch .env.local
-          echo NEXT_PUBLIC_AIRTABLE_API_KEY=${{ secrets.NEXT_PUBLIC_AIRTABLE_API_KEY }} >> .env.local
-          npx next build
+        run: npx next build
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
