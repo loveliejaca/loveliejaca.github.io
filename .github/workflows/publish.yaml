@@ -30,7 +30,10 @@ jobs:
           static_site_generator: next
 
       - name: Build with Next.js 🏗️
-        run: npx next build
+        run: |
+          touch .env.local
+          echo NEXT_PUBLIC_AIRTABLE_API_KEY=${{ secrets.NEXT_PUBLIC_AIRTABLE_API_KEY }} >> .env.local
+          npx next build
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
