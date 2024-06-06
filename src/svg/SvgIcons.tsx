@@ -1,7 +1,7 @@
-import React  from 'react';
+import React, { SVGProps }  from 'react';
 
 export const LjLogo = (
-	props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
 	<svg xmlns="http://www.w3.org/2000/svg" version="1.0" preserveAspectRatio="xMidYMid meet" viewBox="65 102 170.87 198.8" {...props}>
 		<g transform="translate(0.000000,401.000000) scale(0.100000,-0.100000)" stroke="none">
 			<path d="M650 2280 l0 -710 565 0 565 0 0 205 0 205 -310 0 -310 0 0 505 0 505 -255 0 -255 0 0 -710z"/>
@@ -12,7 +12,7 @@ export const LjLogo = (
 
 
 export const EmailIcon = (
-	props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
 	<svg viewBox="0 56.19 512 399.63" xmlns="http://www.w3.org/2000/svg" {...props} >
 		<g>
 			<path d="M510.746,110.361c-2.128-10.754-6.926-20.918-13.926-29.463c-1.422-1.794-2.909-3.39-4.535-5.009   c-12.454-12.52-29.778-19.701-47.531-19.701H67.244c-17.951,0-34.834,7-47.539,19.708c-1.608,1.604-3.099,3.216-4.575,5.067   c-6.97,8.509-11.747,18.659-13.824,29.428C0.438,114.62,0,119.002,0,123.435v265.137c0,9.224,1.874,18.206,5.589,26.745   c3.215,7.583,8.093,14.772,14.112,20.788c1.516,1.509,3.022,2.901,4.63,4.258c12.034,9.966,27.272,15.45,42.913,15.45h377.51   c15.742,0,30.965-5.505,42.967-15.56c1.604-1.298,3.091-2.661,4.578-4.148c5.818-5.812,10.442-12.49,13.766-19.854l0.438-1.05   c3.646-8.377,5.497-17.33,5.497-26.628V123.435C512,119.06,511.578,114.649,510.746,110.361z M34.823,99.104   c0.951-1.392,2.165-2.821,3.714-4.382c7.689-7.685,17.886-11.914,28.706-11.914h377.51c10.915,0,21.115,4.236,28.719,11.929   c1.313,1.327,2.567,2.8,3.661,4.272l2.887,3.88l-201.5,175.616c-6.212,5.446-14.21,8.443-22.523,8.443   c-8.231,0-16.222-2.99-22.508-8.436L32.19,102.939L34.823,99.104z M26.755,390.913c-0.109-0.722-0.134-1.524-0.134-2.341V128.925   l156.37,136.411L28.199,400.297L26.755,390.913z M464.899,423.84c-6.052,3.492-13.022,5.344-20.145,5.344H67.244   c-7.127,0-14.094-1.852-20.142-5.344l-6.328-3.668l159.936-139.379l17.528,15.246c10.514,9.128,23.922,14.16,37.761,14.16   c13.89,0,27.32-5.032,37.827-14.16l17.521-15.253L471.228,420.18L464.899,423.84z M485.372,388.572   c0,0.803-0.015,1.597-0.116,2.304l-1.386,9.472L329.012,265.409l156.36-136.418V388.572z"></path>
@@ -21,39 +21,42 @@ export const EmailIcon = (
 )
 
 export const LinkedInIcon = (
-	props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
 			<path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
 		</svg>
 );
 
 export const LocationIcon = (
-	props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-	 viewBox="0 0 297 297" {...props}>
-		<g>
-			<path d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645
-				c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645
-				C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892
-				c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z"/>
-			<path d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614
-				c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901
-				c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104
-				C179.265,127.948,165.464,141.901,148.5,141.901z"/>
-		</g>
-	</svg>
+	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
+		<svg 
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 297 297" 
+			{...props}
+		>
+			<g>
+				<path d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645
+					c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645
+					C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892
+					c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z"/>
+				<path d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614
+					c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901
+					c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104
+					C179.265,127.948,165.464,141.901,148.5,141.901z"/>
+			</g>
+		</svg>
 );
 
 
 export const HtmlIcon = (
-	props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" {...props}>
 	<path d="M 9 7 L 12 41 L 26 45 L 40 41 C 41 29.667 42 18.333 43 7 L 9 7 z M 11.183594 9 L 40.816406 9 L 38.128906 39.455078 L 26 42.919922 L 13.871094 39.455078 L 11.183594 9 z M 18.550781 15 L 17.589844 27 L 30.580078 27 L 30.169922 32 L 26 32.619141 L 21.880859 32 L 21.699219 30 L 17.839844 30 L 18.230469 35 L 25.990234 37 L 33.759766 35 L 34.75 23 L 22.089844 23 L 22.410156 19 L 30.769531 19 L 31 21 L 34.699219 21 L 34 15 L 18.550781 15 z"></path>
 	</svg>
 )
 
 export const CssIcon = (
-	props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
 	<svg 
 		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 0 50 50"
@@ -64,7 +67,7 @@ export const CssIcon = (
 )
 
 export const JavascriptIcon = (
-	props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
 	<svg 
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 50 50" {...props}
@@ -74,7 +77,7 @@ export const JavascriptIcon = (
 )
 
 export const ReactIcon = (
-	props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
 	<svg 
 		viewBox="0 0 32 32" 
 		fill="none" 
@@ -87,7 +90,7 @@ export const ReactIcon = (
 )
 
 export const TypescriptIcon = (
-	props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
 	<svg 
 		viewBox="0 0 16 16" 
 		fill="none"
@@ -99,7 +102,7 @@ export const TypescriptIcon = (
 )
 
 export const SassIcon = (
-	props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
 	<svg 
 		viewBox="0 0 32 32" 
 		xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +113,7 @@ export const SassIcon = (
 )
 
 export const WordpressIcon = (
-	props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
 	<svg 
 		viewBox="0 0 1920 1920" 
 		xmlns="http://www.w3.org/2000/svg"
@@ -121,21 +124,21 @@ export const WordpressIcon = (
 )
 
 export const YextIcon = (
-	props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520 1520" {...props}>
 		<path fillRule="evenodd" d="m760 1520c-420.3 0-760-339.7-760-760 0-420.3 339.7-760 760-760 420.3 0 760 339.7 760 760 0 420.3-339.7 760-760 760zm699.2-760c0-386.7-312.5-699.2-699.2-699.2-386.7 0-699.2 312.5-699.2 699.2 0 386.7 312.5 699.2 699.2 699.2 386.7 0 699.2-312.5 699.2-699.2zm-676.4 22.8h334.4v60.8h-136.8v273.6h-60.8v-273.6h-136.8zm-38 35.4l-131.8 131.8 131.8 131.8-43 43-131.8-131.8-131.8 131.8-43-43 131.8-131.8-131.8-131.8 43-43 131.8 131.8 131.8-131.8zm30.4-252c0-94.4 76.5-171 171-171 60.2 0 113 31.1 143.5 78.1l-191.9 191.9c14.6 7.2 31 11.2 48.4 11.2 60.9 0 110.2-49.3 110.2-110.2h60.8c0 94.4-76.6 171-171 171-94.5 0-171-76.6-171-171zm60.8 0c0 21.4 6.1 41.3 16.6 58.2l151.8-151.8c-16.9-10.5-36.8-16.6-58.2-16.6-60.9 0-110.2 49.3-110.2 110.2zm-137.8-171l46.6 39.1-144.4 172.1v130.8h-60.8v-130.8l-144.4-172.1 46.6-39.1 128.2 152.8z"/>
 	</svg>
 )
 
 export const GitIcon = (
-	props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
 	<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
 		<path fillRule="evenodd" clipRule="evenodd" d="M3 5C3 6.30622 3.83481 7.41746 5 7.82929V16.1707C3.83481 16.5825 3 17.6938 3 19C3 20.6569 4.34315 22 6 22C7.65685 22 9 20.6569 9 19C9 17.6938 8.16519 16.5825 7 16.1707V11.3987C8.89299 14.0198 11.8676 15.7195 15.1597 15.9683C15.5625 17.15 16.682 18 18 18C19.6569 18 21 16.6569 21 15C21 13.3431 19.6569 12 18 12C16.7075 12 15.6058 12.8174 15.1839 13.9635C11.726 13.6534 8.7142 11.3899 7.47847 8.09457L7.3272 7.6912C8.31833 7.20148 9 6.18034 9 5C9 3.34315 7.65685 2 6 2C4.34315 2 3 3.34315 3 5ZM6 18C5.44772 18 5 18.4477 5 19C5 19.5523 5.44772 20 6 20C6.55228 20 7 19.5523 7 19C7 18.4477 6.55228 18 6 18ZM17 15C17 14.4477 17.4477 14 18 14C18.5523 14 19 14.4477 19 15C19 15.5523 18.5523 16 18 16C17.4477 16 17 15.5523 17 15ZM5 5C5 4.44772 5.44772 4 6 4C6.55228 4 7 4.44772 7 5C7 5.55228 6.55228 6 6 6C5.44772 6 5 5.55228 5 5Z"/>
 	</svg>
 )
 
 export const PhotoshopIcon = (
-	props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
 	<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
 		<g>
 			<path d="M12.11,10.47a2.41,2.41,0,0,1-.8,1.94,3.36,3.36,0,0,1-2.25.67H8.35v2.79H6.68V8H9.19a3.32,3.32,0,0,1,2.17.62A2.22,2.22,0,0,1,12.11,10.47ZM8.35,11.72h.54A1.82,1.82,0,0,0,10,11.41a1,1,0,0,0,.38-.88,1.08,1.08,0,0,0-.32-.87,1.51,1.51,0,0,0-1-.28H8.35Z"/>
@@ -145,12 +148,12 @@ export const PhotoshopIcon = (
 )
 
 // export const Sparkle = (
-// 	props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+// 	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
 
 // )
 
 // export const sample = (
-// 	props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+// 	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
 
 // )
 

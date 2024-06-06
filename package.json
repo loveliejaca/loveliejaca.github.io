@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.5.0",
+    "@next/eslint-plugin-next": "^14.2.3",
     "@storybook/addon-essentials": "^8.1.5",
     "@storybook/addon-interactions": "^8.1.5",
     "@storybook/addon-links": "^8.1.5",
@@ -43,11 +44,10 @@
   "eslintConfig": {
     "extends": [
       "plugin:storybook/recommended",
-      "plugin:@typescript-eslint/recommended"
+      "plugin:@next/next/recommended"
     ],
     "rules": {
       "@typescript-eslint/no-explicit-any": "off"
     }
   }
-  
 }
