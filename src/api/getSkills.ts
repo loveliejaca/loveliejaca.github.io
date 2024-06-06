@@ -1,3 +1,4 @@
+
 import { getMinifiedRecords, base } from "./utils/airtable";
 
 export default async function getSkills() {

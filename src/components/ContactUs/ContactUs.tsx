@@ -4,23 +4,26 @@ import styles from './ContactUs.module.scss'
 import Heading from '../Heading/Heading';
 import { EmailIcon, LinkedInIcon, LocationIcon } from '@/svg/SvgIcons';
 
-interface ContactFormProps {
-  name: string;
-  email: string;
-  message: string;
-}
+// interface ContactFormProps {
+//   name: string;
+//   email: string;
+//   message: string;
+// }
 
 const ContactUs = () => {
 	const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  // const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setSubmitted(true);
+    // setSubmitted(true);
     // Add your form submission logic here
     console.log('Form submitted:', { name, email, message });
+
+		setName('');
+		setEmail('');
   };
   return (
 		<section className={styles.contact}>

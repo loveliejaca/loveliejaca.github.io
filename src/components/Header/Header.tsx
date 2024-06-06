@@ -2,10 +2,6 @@ import React from 'react';
 import styles from './Header.module.scss';
 import { LjLogo } from '@/svg/SvgIcons';
 
-interface Props {
-  message: string;
-}
-
 const Header = () => {
   return (
 		<header className={styles.header}>

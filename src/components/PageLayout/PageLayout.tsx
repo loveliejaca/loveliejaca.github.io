@@ -9,7 +9,6 @@ interface Props {
 }
 
 const PageLayout: FC<Props> = ({ children }) => {
-
   return (
 		<>
 			<Header/>

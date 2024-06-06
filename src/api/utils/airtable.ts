@@ -1,4 +1,6 @@
-const Airtable = require('airtable');
+// const Airtable = require('airtable');
+
+import Airtable from "airtable";
 
 const base = new Airtable({
   apiKey: process.env.NEXT_PUBLIC_AIRTABLE_API_KEY,
@@ -18,15 +20,15 @@ const getMinifiedRecords = (records:any) => {
 export {base, minifyRecord, getMinifiedRecords};
 
 
-export async function getUser() {
-  try {
-    const table = base('User');
-    const records = await table.select({}).all();
-    const minifiedRecords = await getMinifiedRecords(records);
+// export async function getUser() {
+//   try {
+//     const table = base('User');
+//     const records = await table.select({}).all();
+//     const minifiedRecords = await getMinifiedRecords(records);
     
-    return minifiedRecords;
-  } catch(error:any) {
-    console.error(`Error fetching skills: ${error.message}`);
-    return { error: 'Failed to fetch skills' };
-  }
-}
+//     return minifiedRecords;
+//   } catch(error:any) {
+//     console.error(`Error fetching skills: ${error.message}`);
+//     return { error: 'Failed to fetch skills' };
+//   }
+// }

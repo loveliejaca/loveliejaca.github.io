@@ -63,10 +63,7 @@ const svgSkillIcons: IsvgSkillIcons = {
 }
 
 const Skills: FC<Props> = ({ skills }) => {
-	const skillList = skills ?? [];
-	console.log('skills', typeof skills);
-	
-	
+
   return (
 		<section className={styles.skills}>
 			<Heading title='Skills'/>
