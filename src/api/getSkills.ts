@@ -1,5 +1,5 @@
 
-import { getMinifiedRecords, base } from "./utils/airtable";
+import base, { getMinifiedRecords } from "./utils/airtable";
 
 export default async function getSkills() {
   try {

@@ -1,4 +1,4 @@
-// const Airtable = require('airtable');
+require('dotenv').config()
 
 import Airtable from "airtable";
 
@@ -17,8 +17,9 @@ const getMinifiedRecords = (records:any) => {
   return records.map((record:any) => minifyRecord(record));
 };
 
-export {base, minifyRecord, getMinifiedRecords};
+export {minifyRecord, getMinifiedRecords};
 
+export default base
 
 // export async function getUser() {
 //   try {
