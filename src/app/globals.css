@@ -1,0 +1,41 @@
+:root {
+  --foreground: 0, 0, 0;
+  --color-white: #fff;
+
+  --color-1: #f9f8f8;
+  --color-2: #695575;
+  --color-3: #817091;
+  --color-4: #5A5f75;
+  --color-5: #446594;
+  --color-6: #f197a3;
+  --color-7: #e4c0c0;
+  --color-8: #ef8e73;
+  --color-9: #f5baa6;
+  --color-10: #796985;
+  --color-11: #4b5269;
+  /* ;
+  --color-5: #5f2f11; */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--color-3);
+  background-color: var(--color-1);
+  min-height: 100dvh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

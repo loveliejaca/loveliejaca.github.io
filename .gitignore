@@ -1,0 +1,7 @@
+# Dependency directories
+node_modules/
+
+.next/
+.swc/
+.*.env
+*storybook.log
