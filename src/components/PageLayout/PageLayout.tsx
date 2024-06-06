@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+
 import styles from './PageLayout.module.scss'
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -8,6 +9,7 @@ interface Props {
 }
 
 const PageLayout: FC<Props> = ({ children }) => {
+
   return (
 		<>
 			<Header/>

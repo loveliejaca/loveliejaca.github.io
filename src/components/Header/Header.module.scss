@@ -1,0 +1,39 @@
+//import the common styles
+@import '../../styles/styles';
+
+.header {
+	position: fixed;
+	display: flex;
+	column-gap: rem(32);
+	align-items: flex-end;
+	justify-content: flex-end;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: rem(100);
+	z-index: 99;
+
+	a {
+		color: #fff;
+		text-transform: uppercase;
+	}
+}
+
+.logo {
+	width: rem(40);
+	height: rem(50);
+
+	svg {
+		width: 100%;
+		height: 100%;
+
+		path {
+			fill: $color-white;
+		}
+	}
+}
+
+.menu {
+	width: 0;
+	overflow: hidden;
+}

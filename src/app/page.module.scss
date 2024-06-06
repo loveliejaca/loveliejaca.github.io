@@ -1,9 +1,10 @@
 //import the common styles
 @import '../styles/styles.scss';
 
-.railtext_container {
-	display: block;
-	position: fixed;
-	top: 0;
-	left: rem(24);
+
+
+.cloud_container {
+	position: absolute;
+	height: 100%;
+	width: 100%;
 }

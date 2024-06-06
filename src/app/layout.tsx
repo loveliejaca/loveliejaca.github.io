@@ -4,7 +4,7 @@ import "./globals.css";
 
 const inter = Montserrat({
   variable: '--font-montserrat',
-  weight: ['400', '900'],
+  weight: ['400', '500', '700', '900'],
   style: ['normal', 'italic'],
   subsets: ['latin'],
   display: 'swap',
