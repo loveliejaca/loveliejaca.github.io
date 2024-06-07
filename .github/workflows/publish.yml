@@ -77,9 +77,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: |
-          echo ${{ secrets.NEXT_PUBLIC_AIRTABLE_API_KEY }}
           touch .env.local
-          echo NEXT_PUBLIC_AIRTABLE_API_KEY=${{ secrets.NEXT_PUBLIC_AIRTABLE_API_KEY }} >> .env.local
+          echo NEXT_PUBLIC_AIRTABLE_API_KEY=${{ secrets.NEXT_PUBLIC_AIRTABLE_API_KEY }} > .env.local
           ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
