@@ -1,9 +1,14 @@
 
+import { baseID, dbAPI } from "@/helper/constant";
 import Airtable from "airtable";
 
+// const base = new Airtable({
+//   apiKey: process.env.NEXT_PUBLIC_AIRTABLE_API_KEY,
+// }).base(process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID);
+
 const base = new Airtable({
-  apiKey: process.env.NEXT_PUBLIC_AIRTABLE_API_KEY,
-}).base(process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID);
+  apiKey: dbAPI,
+}).base(baseID);
 
 const minifyRecord = (record:any) => {
   return {
@@ -13,6 +18,7 @@ const minifyRecord = (record:any) => {
 };
 
 const getMinifiedRecords = (records:any) => {
+  console.log('process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID', process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID)
   return records.map((record:any) => minifyRecord(record));
 };
 
