@@ -36,10 +36,10 @@ jobs:
           NEXT_PUBLIC_AIRTABLE_API_KEY:  ${{secrets.NEXT_PUBLIC_AIRTABLE_API_KEY}}
         run: npx next build
 
-      - name: Upload artifact 📡
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out
+      # - name: Upload artifact 📡
+      #   uses: actions/upload-pages-artifact@v3
+      #   with:
+      #     path: ./out
 
   deploy:  
     needs: build
