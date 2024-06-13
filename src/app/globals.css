@@ -2,17 +2,17 @@
   --foreground: 0, 0, 0;
   --color-white: #fff;
 
-  --color-1: #f9f8f8;
-  --color-2: #695575;
-  --color-3: #817091;
-  --color-4: #5A5f75;
-  --color-5: #446594;
-  --color-6: #f197a3;
-  --color-7: #e4c0c0;
-  --color-8: #ef8e73;
-  --color-9: #f5baa6;
-  --color-10: #796985;
-  --color-11: #4b5269;
+  --color-1: #f3f3f2;
+  --color-2: #232526;
+  --color-3: #bf8f73;
+  --color-4: #ead2b4;
+  --color-5: #e3dbd2;
+  --color-6: #d4b29c;
+  --color-7: #c29268;
+  --color-8: #a9694d;
+  --color-9: #894f2c;
+  --color-10: #b48c50;
+  --color-11: #754736;
   /* ;
   --color-5: #5f2f11; */
 }
@@ -31,7 +31,7 @@ body {
 
 body {
   color: var(--color-3);
-  background-color: var(--color-1);
+  background-color: var(--color-2);
   min-height: 100dvh;
   overflow: hidden;
 }

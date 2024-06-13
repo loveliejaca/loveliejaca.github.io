@@ -1,7 +1,7 @@
 'use client';
 import React, { FC, useRef } from 'react';
 import styles from './Hero.module.scss';
-import Particles from '../../elements/Particles/Particles';
+// import Particles from '../../elements/Particles/Particles';
 
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -78,8 +78,6 @@ const Hero:FC<Props> = ({ data }) => {
 					<circle className={`circle circle-dashed ${styles.circle_dashed}`} cx="455" cy="455" r="448" strokeWidth="1" fill="transparent"/>
 				</svg>
 			</div>
-
-			<Particles/>
 
 			<div className={styles.hero__content}>
 				<h1 aria-label={data.hero_heading}>

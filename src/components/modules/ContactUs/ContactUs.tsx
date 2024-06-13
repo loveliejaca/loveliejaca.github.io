@@ -161,6 +161,12 @@ const ContactUs: FC<Props> = ({ data }) => {
 				</div>
 			</div>
 			
+			<div className={styles.moon}>
+				<span></span>
+				<span></span>
+				<span></span>
+				<div className={styles.moon__face}></div>
+			</div>
 		</section>
 	);
 };

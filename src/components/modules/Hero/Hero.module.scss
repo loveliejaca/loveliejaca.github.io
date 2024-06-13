@@ -21,6 +21,8 @@ background: linear-gradient(180deg, rgba(112,84,65,1) 0%, rgba(35,37,38,1) 100%)
 	justify-content: center;
 	height: 80vh;
 	margin: 0 auto;
+	position: relative;
+	z-index: 2;
 
 	h1 {
 		display: flex;

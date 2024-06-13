@@ -10,6 +10,7 @@ import Skills from '../components/modules/Skills/Skills';
 import type { Metadata } from 'next'
 import getSkills from '@/api/getSkills';
 import getUser from '@/api/getUser';
+import Particles from '@/components/elements/Particles/Particles';
 // import { getUser, getSkills } from '@/api/airtable';
  
 export const metadata: Metadata = {
@@ -38,6 +39,7 @@ const Home = async () => {
       <Hero data={dataHero}/>
       <Skills skills={dataSkills}/>
       <ContactUs data={dataContact}/>
+      <Particles/>
     </PageLayout>
 	);
 };
