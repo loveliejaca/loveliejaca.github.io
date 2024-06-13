@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.scss'
 import { LjLogo } from '@/svg/SvgIcons';
-import Cloud from '../../elements/Cloud/Cloud';
 
 const Footer = () => {
   return (

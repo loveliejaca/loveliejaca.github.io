@@ -1,15 +1,14 @@
 'use client';
 
-import React, { useEffect, FC } from 'react';
+import React, { FC } from 'react';
 import styles from './Cloud.module.scss';
-import { gsap } from 'gsap';
 
 interface Props {
   color?: string;
 	isAnimate?: boolean;
 }
 
-const Cloud: FC<Props> = ({ color, isAnimate }) => {
+const Cloud: FC<Props> = ({ color }) => {
 
 	const getStyle = () => {
     if (color) {

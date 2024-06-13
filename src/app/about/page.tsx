@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './about.module.scss'
-import Image from 'next/image';
 
 //components import
 import PageLayout from '../../components/modules/PageLayout/PageLayout';

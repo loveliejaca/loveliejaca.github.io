@@ -31,7 +31,7 @@ const ContactUs: FC<Props> = ({ data }) => {
     message: false,
   });
 
-	const { register, handleSubmit } = useForm<FormData>();
+	const { handleSubmit } = useForm<FormData>();
 
 	const handleFocus = (inputId: string) => {
 		console.log('inputId', inputId);

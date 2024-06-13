@@ -1,10 +1,9 @@
 'use client';
-import React, { FC, useEffect, useRef } from 'react';
+import React, { FC, useRef } from 'react';
 import styles from './Hero.module.scss';
 import Particles from '../../elements/Particles/Particles';
 
 import { gsap } from 'gsap';
-import { Circle } from '@/svg/SvgIcons';
 import { useGSAP } from '@gsap/react';
 
 interface Props {

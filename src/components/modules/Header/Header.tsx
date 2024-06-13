@@ -3,12 +3,20 @@ import React, { useRef, useEffect, useState } from 'react';
 import styles from './Header.module.scss';
 import { LjLogo } from '@/svg/SvgIcons';
 import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 const Header = () => {
 	const navRef = useRef<HTMLElement>(null);
 	const menuRef = useRef<HTMLButtonElement>(null);
 	const [isOpen, SetIsOpen] = useState(false);
-	const lalal = useRef();
+
+	useGSAP(
+		() => {
+			// gsap code here...
+				gsap.to('.box', { rotation: 180 }); // <-- automatically reverted
+		},
+		{ scope: menuRef}
+	)
 
 	useEffect(() => {
 		const menuBar = gsap.timeline();

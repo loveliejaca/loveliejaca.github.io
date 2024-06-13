@@ -14,7 +14,6 @@ import {
 	GitIcon,
 	PhotoshopIcon
 } from '@/svg/SvgIcons';
-import Cloud from '../../elements/Cloud/Cloud';
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
