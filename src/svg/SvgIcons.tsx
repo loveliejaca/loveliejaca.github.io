@@ -147,6 +147,14 @@ export const PhotoshopIcon = (
 	</svg>
 )
 
+export const Circle = (
+	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 905 905" {...props}>
+   <circle cx="455" cy="455" r="450" stroke-width="1" fill="transparent"/>
+	</svg>
+
+)
+
 // export const Sparkle = (
 // 	props: JSX.IntrinsicAttributes &SVGProps<SVGSVGElement>) => (
 

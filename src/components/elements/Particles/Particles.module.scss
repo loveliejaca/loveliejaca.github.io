@@ -1,0 +1,59 @@
+//import the common styles
+@import '../../../styles/styles';
+
+.particle_container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+}
+
+.particle {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	opacity: 0;
+
+	span {
+		display: block;
+		position: absolute;
+ 		border-radius: 50%;
+		background-color: $color-5;
+		border: 1px solid $color-5;
+	}
+}
+
+@for $i from 1 through 100 {
+	$position: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+
+	@keyframes particle-animation-#{$i} {
+		0% {
+			transform: $position scale(1);
+		}
+		50% {
+			transform: $position scale(0);
+		}
+		100% {
+			transform: $position scale(1);
+		}
+	}
+
+	@if $i % 3 == 0 {  //use $i for calculating mod here 
+		.particle span:nth-child(#{$i}){
+			background-color: transparent;
+		}
+  }
+	
+	.particle span:nth-child(#{$i}){
+		animation: particle-animation-#{$i} 5s infinite;
+		$size: random(4) + 4 + px;
+		opacity: random(50)/50;
+		height: $size;
+		width: $size;
+		animation-delay: -$i * .2s;
+		transform: $position;
+	}
+}

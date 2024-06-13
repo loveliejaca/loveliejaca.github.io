@@ -1,0 +1,11 @@
+//import the common styles
+@import '../../styles/styles';
+
+.projects {
+	position: relative;
+	background-color: $color-8;
+	min-height: calc(100vh - 120px);
+	overflow: hidden;
+	padding: rem(130) rem(56) 20vw;
+	color:  $color-11;
+}
