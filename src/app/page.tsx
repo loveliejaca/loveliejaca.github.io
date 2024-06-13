@@ -1,10 +1,10 @@
 import React from 'react';
 
 //components import
-import PageLayout from '../components/PageLayout/PageLayout';
-import Hero from '../components/Hero/Hero';
-import ContactUs from '../components/ContactUs/ContactUs';
-import Skills from '../components/Skills/Skills';
+import PageLayout from '../components/modules/PageLayout/PageLayout';
+import Hero from '../components/modules/Hero/Hero';
+import ContactUs from '../components/modules/ContactUs/ContactUs';
+import Skills from '../components/modules/Skills/Skills';
 
 
 import type { Metadata } from 'next'
@@ -22,15 +22,22 @@ const Home = async () => {
   const userList = await getUser();
 
   const dataUser = userList && userList.find((field:any) => field.fields.id === 'lovely-jaca');
-
-  console.log('-----', dataUser);
   
-  // const heroData = dataHome
+  const dataHero = {
+    hero_heading: dataUser?.fields.hero_heading,
+    hero_description: dataUser?.fields.hero_description,
+    position: dataUser?.fields.position
+  }
+  const dataContact = {
+    location: dataUser?.fields.location,
+    email: dataUser?.fields.email
+  }
+
   return (
     <PageLayout>
-      <Hero fields={dataUser.fields}/>
+      <Hero data={dataHero}/>
       <Skills skills={dataSkills}/>
-      <ContactUs/>
+      <ContactUs data={dataContact}/>
     </PageLayout>
 	);
 };

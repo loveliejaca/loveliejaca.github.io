@@ -1,0 +1,80 @@
+//import the common styles
+@import '../../styles/styles';
+
+.about {
+	position: relative;
+	background-color: $color-5;
+	min-height: calc(100vh - 120px);
+	padding: rem(130) rem(56) 0;
+	color:  $color-2;
+
+	h2, h1 {
+		color:  $color-8 !important;
+	}
+}
+
+.about__section {
+	position: relative;
+
+	&:not(:last-child) {
+		margin-bottom: rem(56);
+	}
+}
+
+.about__content {
+	max-width: rem(800);
+	margin: rem(56) auto 0;
+
+	p {
+		margin-top: rem(32);
+		font-size: rem(16);
+		line-height: rem(24);
+	}
+}
+
+.about__dtl {
+	display: flex;
+	column-gap: rem(56);
+	align-items: center;
+}
+
+.about__dtl_img {
+	background-color: $color-1;
+	border-radius: 50%;
+	width: rem(300);
+	height: rem(300);
+}
+
+.about__dtl_content_item {
+	display: block;
+	margin-bottom: rem(24);
+
+	span {
+		display: block;
+	}
+}
+
+.about__dtl_content_label {
+	font-size: rem(18);
+	font-weight: 500;
+	text-transform: uppercase;
+	color: $color-11;
+}
+
+.about__dtl_content_value {
+	margin-top: rem(10);
+}
+
+.about__accent {
+	height: 900px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: -190px;
+	position: relative;
+	z-index: 2;
+
+	img {
+		height: 100%;
+	}
+}

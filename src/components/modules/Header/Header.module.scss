@@ -1,0 +1,82 @@
+//import the common styles
+@import '../../../styles/styles';
+
+.header {
+	position: fixed;
+	display: flex;
+	column-gap: rem(24);
+	align-items: center;
+	justify-content: flex-end;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: rem(130);
+	padding: 0 rem(56);
+	z-index: 99;
+
+	a {
+		color: $color-5;
+		text-transform: uppercase;
+	}
+}
+
+.logo {
+	width: rem(50);
+	height: rem(60);
+
+	svg {
+		width: 100%;
+		height: 100%;
+
+		path {
+			fill: $color-7;
+	
+			&:nth-child(1) {
+				fill: $color-8;
+			}
+		}
+	}
+}
+
+.menu {
+	height: rem(41.5);
+	position: absolute;
+	overflow: hidden;
+	right: rem(105);
+	top: rem(36);
+	display: flex;
+
+	nav {
+		border: rem(1) solid $color-7;
+		background-color: $color-7;
+		display: flex;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		column-gap: rem(24);
+		padding: 0 rem(100) 0 rem(24);
+		transform: translateX(100%);
+	}
+}
+
+.hamburger {
+	background-color: transparent;
+	display: block;
+	position: relative;
+	height: rem(42);
+	width: rem(40);
+	top: rem(-8);
+	z-index: 1;
+	border: 0	;
+	cursor: pointer;
+
+	span {
+		display: block;
+		width: 100%;
+		height: rem(5);
+		border-radius: rem(10);
+		background-color: $color-7;
+		margin: rem(7) 0;
+		
+	}
+}
