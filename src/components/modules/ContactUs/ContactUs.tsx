@@ -1,5 +1,5 @@
 'use client';
-import React , { FC, useEffect, useState } from 'react';
+import React , { FC } from 'react';
 import styles from './ContactUs.module.scss'
 import Heading from '../../elements/Heading/Heading';
 import { EmailIcon, LinkedInIcon, LocationIcon } from '@/svg/SvgIcons';
