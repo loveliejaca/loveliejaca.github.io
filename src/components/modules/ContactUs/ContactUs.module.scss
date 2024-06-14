@@ -10,39 +10,12 @@
 
 	h2 {
 		color: $color-5;
-		font-size: rem(32) !important;
 	}
-
-	// &::before {
-	// 	content: '';
-	// 	position: absolute;
-	// 	bottom: rem(-150);
-	// 	right: 0;
-	// 	background-image: url("/assets/celestial-moon.png");
-	// 	background-size: contain;
-	// 	background-repeat: no-repeat;
-	// 	width: rem(350);
-	// 	height: rem(350);
-	// 	z-index: 2;
-	// }
-
-	// &::after {
-	// 	display: block;
-	// 	content: '';
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	background-image: url("/assets/celestial-cloud-2.png");
-	// 	background-size: contain;
-	// 	background-repeat: no-repeat;
-	// 	width: rem(450);
-	// 	height: rem(350);
-	// 	transform: scaleX(-1);
-	// }
 }
 
 .contact__inner {
 	display: flex;
+	justify-content: center;
 	column-gap: rem(60);
 	max-width: rem(1000);
 	margin: 0 auto;
@@ -50,9 +23,6 @@
 	z-index: 3;
 }
 
-.contact__social {
-	width: rem(400);
-}
 
 .contact__social_line {
 	display: block;
@@ -72,8 +42,18 @@
 	border: rem(2) solid $color-4;
 }
 
-.contact__email,
-.contact__number {
+.contact__item{
+	margin-top: rem(32);
+	
+	svg {
+		width: rem(48);
+		height: rem(32);
+
+		path {
+			fill: $color-4;
+		}
+	}
+
 	a {
 		display: flex;
 		align-items: center;
@@ -87,29 +67,6 @@
 	}
 }
 
-.contact__email {
-	margin-top: rem(32);
-	svg {
-		width: rem(48);
-		height: rem(32);
-
-		path {
-			fill: $color-4;
-		}
-	}
-}
-
-.contact__number {
-	margin-top: rem(32);
-	svg {
-		width: rem(48);
-		height: rem(32);
-
-		path {
-			fill: $color-4;
-		}
-	}
-}
 
 .contact__form {
 	width: calc(100% - rem(432));
@@ -260,6 +217,18 @@
 		height: rem(200);
 		right: -9px;
 	}
+}
+
+.sun {
+	position: absolute;
+	top: rem(-100);
+	left: rem(-100);
+	width: rem(500);
+	height:rem(500);
+	background-image: url('/assets/sun-face.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 1;
 }
 
 @keyframes rotating {

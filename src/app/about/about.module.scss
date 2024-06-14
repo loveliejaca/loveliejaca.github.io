@@ -3,10 +3,9 @@
 
 .about {
 	position: relative;
-	background-color: $color-5;
 	min-height: calc(100vh - 120px);
 	padding: rem(130) rem(56) 0;
-	color:  $color-2;
+	color:  $color-1;
 
 	h2, h1 {
 		color:  $color-8 !important;
@@ -58,7 +57,7 @@
 	font-size: rem(18);
 	font-weight: 500;
 	text-transform: uppercase;
-	color: $color-11;
+	color: $color-8;
 }
 
 .about__dtl_content_value {
@@ -78,3 +77,4 @@
 		height: 100%;
 	}
 }
+

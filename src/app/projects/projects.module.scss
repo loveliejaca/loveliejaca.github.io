@@ -3,9 +3,177 @@
 
 .projects {
 	position: relative;
-	background-color: $color-8;
 	min-height: calc(100vh - 120px);
 	overflow: hidden;
-	padding: rem(130) rem(56) 20vw;
-	color:  $color-11;
+	padding: rem(130) rem(56);
+	color:  $color-1;
+}
+
+.projects__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: rem(32);
+	margin-top: rem(56);
+}
+
+.projects__item {
+	position: relative;
+	width: rem(350);
+	height: rem(600);
+	
+	// 
+	border-radius: rem(5);
+}
+
+.projects__card_front,
+.projects__card_back {
+	background-color: $color-13;
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: rem(16);
+	-webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: ease-in-out 600ms;
+
+	&::before {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-image: url('/assets/card-bg-2.jpg');
+		background-size: cover;
+		background-position: center;
+		top: 0;
+		left: 0;
+		opacity: 0.1;
+	}
+}
+
+.projects__card_back {
+	transform: rotateY(-180deg);
+
+	> div {
+		background-color: $color-13;
+	}
+}
+
+.projects__card_container {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	&:hover {
+		// transform: rotateY(-180deg);
+
+		> div {
+			&:nth-child(1) {
+				transform: rotateY(180deg);
+			}
+			&:nth-child(2) {
+				transform: rotateY(0deg);
+			}
+		}
+	}
+}
+
+.projects__card {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: rem(3);
+	border: rem(1) solid $color-7;
+	border-radius: rem(20);
+	top: 0;
+	left: 0;
+}
+
+.projects__card_inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	border-radius: rem(20);
+}
+
+.projects__card_img {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: rem(1) solid $color-7;
+	border-radius: rem(15) rem(15) 0 0;
+	height: calc(100% - 45px);
+
+	span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		right: 0;
+
+		&::after,
+		&::before {
+			content: '';
+			position: absolute;
+			width: rem(180);
+			height: rem(180);
+			border: rem(1) dashed $color-7;
+			transform: rotate(45deg);
+		}
+		&::before {
+			top: 20%;
+		}
+		&::after {
+			top: 45%;
+		}
+	}
+
+	
+}
+
+.projects__card_img_circle {
+	background-color: #2d2f31;
+	background-image: url('/assets/sun-face.png');
+	background-size: contain;
+	background-position: center;
+	border-radius: 50%;
+	width: rem(230);
+	height: rem(230);
+	z-index: 1;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: calc(100% + 15px);
+		height: calc(100% + 15px);
+		border: rem(1) solid $color-7;
+		border-radius: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.projects__card_name {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: rem(40);
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	color: $color-6;
 }

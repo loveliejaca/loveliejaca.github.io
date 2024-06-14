@@ -6,6 +6,7 @@ import PageLayout from '../../components/modules/PageLayout/PageLayout';
 
 import type { Metadata } from 'next'
 import Heading from '@/components/elements/Heading/Heading';
+import Scorpio from '@/components/elements/Constelation/Scorpio';
 
 export const metadata: Metadata = {
   title: 'About',
@@ -24,6 +25,7 @@ const About = () => {
   return (
     <PageLayout>
       <div className={styles.about}>
+        <Scorpio/>
         <section className={styles.about__section}>
           <Heading>
             <h1>About Me</h1>
