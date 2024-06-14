@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './page.module.scss';
+// import styles from './page.module.scss';
 
 //components import
 import PageLayout from '../components/modules/PageLayout/PageLayout';

@@ -40,7 +40,7 @@ const Projects = async () => {
         <div className={styles.projects__list}>
           {projectList.map( (project:IProjectItem) => {
             return (
-              <div className={styles.projects__item}>
+              <div key={project.fields.id} className={styles.projects__item}>
                   <div className={styles.projects__card_container}>
 
                     <div className={styles.projects__card_front}>
