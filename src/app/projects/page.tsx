@@ -75,6 +75,18 @@ const Projects = async () => {
           })}
         </div>
       </section>
+
+      <section className={styles.code}>
+        <Heading>
+          <h2>Lala</h2>
+        </Heading>
+
+        <div className={styles.code__list}>
+          {[...Array(4)].map((_, i) => (
+            <div className={styles.code__card}></div>
+          ))}
+        </div>
+      </section>
     </PageLayout>
 	);
 };

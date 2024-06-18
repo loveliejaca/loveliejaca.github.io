@@ -5,13 +5,9 @@
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	// background: rgb(200,170,162);
-	// background: linear-gradient(90deg, rgb(164 143 142) 6%, rgb(87, 93, 115) 62%, rgb(79, 86, 109) 100%);
-// 	background: rgb(83,64,55);
-// background: linear-gradient(180deg, rgba(83,64,55,1) 6%, rgba(21,22,21,1) 100%);
-background: rgb(112,84,65);
-background: linear-gradient(180deg, rgba(112,84,65,1) 0%, rgba(35,37,38,1) 100%);
-}
+	background: rgb(112,84,65);
+	background: linear-gradient(180deg, rgba(112,84,65,1) 0%, rgba(35,37,38,1) 100%);
+	}
 
 .hero__content {
 	display: flex;
@@ -131,78 +127,6 @@ background: linear-gradient(180deg, rgba(112,84,65,1) 0%, rgba(35,37,38,1) 100%)
 	top: -43vh;
 }
 
-.hero__bg_circle_1,
-.hero__bg_circle_2,
-.hero__bg_circle_3,
-.hero__bg_circle_4,
-.hero__bg_circle_5,
-.hero__bg_circle_6,
-.hero__bg_circle_7 {
-	position: absolute;
-	display: block;
-	border-radius: 50%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	opacity: 0;
-	// box-shadow: 4px -2px 9px -5px rgb(31 32 37 / 59%);
-}
-
-.hero__bg_circle_1 {
-	// background: rgb(244,228,223);
-	// background: linear-gradient(90deg, rgba(244,228,223,1) 0%, rgba(215,197,196,1) 100%);
-	width: 30vw;
-	height: 30vw;
-	background: rgb(232,193,180);
-	background: linear-gradient(90deg, rgba(232,193,180,1) 6%, rgba(219,183,175,1) 58%, rgba(201,170,162,1) 100%);
-	z-index: 6;
-}
-
-.hero__bg_circle_2 {
-	width: 50vw;
-	height: 50vw;
-	background: rgb(227,190,179);
-	background: linear-gradient(90deg, rgba(227,190,179,1) 6%, rgba(203,171,164,1) 58%, rgba(176,150,149,1) 100%);
-	z-index: 5;
-}
-
-.hero__bg_circle_3 {
-	width: 70vw;
-	height: 70vw;
-	background: rgb(223,186,179);
-	background: linear-gradient(90deg, rgba(223,186,179,1) 6%, rgba(191,162,158,1) 58%, rgba(158,138,143,1) 100%);
-	z-index: 4;
-}
-
-.hero__bg_circle_4 {
-	width: 90vw;
-	height: 90vw;
-	background: rgb(207,174,167);
-	background: linear-gradient(90deg, rgba(207,174,167,1) 6%, rgba(176,150,149,1) 58%, rgba(140,127,135,1) 100%);
-	z-index: 3;
-}
-
-.hero__bg_circle_5 {
-	width: 110vw;
-	height: 110vw;
-	background: rgb(200,170,162);
-	background: linear-gradient(90deg, rgba(200,170,162,1) 6%, rgba(125,118,128,1) 100%);
-	z-index: 2;
-}
-
-.hero__bg_circle_6 {
-	width: 130vw;
-	height: 130vw;
-	background: rgb(192,162,158);
-	background: linear-gradient(90deg, rgba(192,162,158,1) 6%, rgba(83,90,113,1) 100%);
-	z-index: 1;
-}
-
-.hero__bg_circle_7 {
-	width: 150vw;
-	height: 150vw;
-}
-
 .planet {
 	position: absolute;
 	bottom: -60vw;
@@ -212,7 +136,7 @@ background: linear-gradient(180deg, rgba(112,84,65,1) 0%, rgba(35,37,38,1) 100%)
 	z-index: 1;
 	opacity: 0.5;
 
-	> div {
+	> div:nth-child(1) {
 		border-radius: 50%;
 		border: 1px solid $color-3;
 		width: 100%;
@@ -248,6 +172,70 @@ background: linear-gradient(180deg, rgba(112,84,65,1) 0%, rgba(35,37,38,1) 100%)
 	stroke: $color-9;
 	stroke-width: 1px;
 	stroke-dasharray: rem(10) rem(15);
+}
+
+.planet__saturn {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.planet__saturn_planet {
+	position: relative;
+	background: linear-gradient(to bottom, #fecf4e 1%, #a62a44 50%, #310441 100%);
+	display: block;
+	border-radius: 50%;
+	width: 7vw;
+	height: 7vw;
+	left: 13vw;
+	top: 18vw;
+	overflow: hidden;
+}
+
+.planet__saturn_ring_before,
+.planet__saturn_ring_after {
+	position: absolute;
+	border-radius: 50%;
+	width: 9vw;
+	height: 2vw;
+	border: 3px solid $color-10;
+	transform: skew(-74deg);
+	left: 12vw;
+	top: 20.5vw;
+}
+
+.planet__saturn_ring_before {
+	-webkit-clip-path: inset(0 0 50% 0);
+	clip-path: inset(0 0 50% 0);	
+}
+
+.planet__saturn_ring_after {
+	-webkit-clip-path: inset(50% 0 0 0);
+	clip-path: inset(50% 0 0 0);	
+}
+
+.planet__earth {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.planet__earth_planet {
+	position: relative;
+	background: linear-gradient(to bottom, #70a27d 23%, #4552a1 58%, #371a6a 100%);
+	display: block;
+	border-radius: 50%;
+	width: 5vw;
+	height: 5vw;
+	left: 58vw;
+	top: 27vw;
+	overflow: hidden;
 }
 
 @keyframes rotating {

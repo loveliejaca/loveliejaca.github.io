@@ -34,6 +34,14 @@ const Hero:FC<Props> = ({ data }) => {
 				stagger: 0.4 
 			}, "")
 		.to(
+			".planet",
+			{ 
+				autoAlpha: 1,
+				ease: "power4.out",
+				duration: 0.5,
+				stagger: 0.2 
+			}, ">-0.2")
+		.to(
 			".heading-text",
 			{ 
 				yPercent: 0,
@@ -77,6 +85,18 @@ const Hero:FC<Props> = ({ data }) => {
 					<circle className={`circle ${styles.circle_solid}`} cx="455" cy="455" r="380" strokeWidth="1" fill="transparent"/>
 					<circle className={`circle circle-dashed ${styles.circle_dashed}`} cx="455" cy="455" r="448" strokeWidth="1" fill="transparent"/>
 				</svg>
+
+				<div className={`planet ${styles.planet__earth}`}>
+					<div className={styles.planet__earth_planet}></div>
+				</div>
+
+				<div className={`planet ${styles.planet__saturn}`}>
+					<div className={styles.planet__saturn_ring_before}></div>
+					<div className={styles.planet__saturn_planet}></div>
+					<div className={styles.planet__saturn_ring_after}></div>
+				</div>
+
+				
 			</div>
 
 			<div className={styles.hero__content}>

@@ -3,9 +3,8 @@
 
 .projects {
 	position: relative;
-	min-height: calc(100vh - 120px);
 	overflow: hidden;
-	padding: rem(130) rem(56);
+	padding: rem(130) rem(56) 0;
 	color:  $color-1;
 }
 
@@ -14,7 +13,8 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: rem(32);
-	margin-top: rem(56);
+	margin: rem(56) auto 0;
+	max-width: rem(1280);
 }
 
 .projects__item {
@@ -176,4 +176,18 @@
 	text-align: center;
 	text-transform: uppercase;
 	color: $color-6;
+}
+
+.code {
+	position: relative;
+	overflow: hidden;
+	padding: rem(130) rem(56);
+	color:  $color-1;
+}
+
+.code__list {
+	display: flex;
+	margin: rem(56) auto 0;
+	max-width: rem(1280);
+	
 }

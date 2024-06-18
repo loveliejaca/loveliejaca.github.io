@@ -16,15 +16,14 @@ const Particles = () => {
 				autoAlpha: 1, 
 				duration: 1,
 				ease: "power2.out", 
-				// stagger: 0.25,
-				delay: 2.5,
+				delay: .5,
 			} 
 		)
 	});
   return (
 		<div className={styles.particle_container}>
 			<div className={`particle ${styles.particle}`}>
-				{[...Array(80)].map((_, i) => (
+				{[...Array(100)].map((_, i) => (
 					<span key={i}></span>
 				))}
 			</div>

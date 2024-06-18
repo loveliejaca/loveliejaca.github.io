@@ -25,7 +25,7 @@ const ContactUs: FC<Props> = ({ data }) => {
 			<div className={styles.contact__inner}>
 				<div className={styles.contact__social}>
 					<Heading>
-						<h2>Contact with me</h2>
+						<h2>Contact me</h2>
 					</Heading>
 
 					<div className={styles.contact__list}>
