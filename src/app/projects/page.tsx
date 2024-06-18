@@ -82,9 +82,9 @@ const Projects = async () => {
         </Heading>
 
         <div className={styles.code__list}>
-          {[...Array(4)].map((_, i) => (
+          {/* {[...Array(4)].map((_, i) => (
             <div className={styles.code__card}></div>
-          ))}
+          ))} */}
         </div>
       </section>
     </PageLayout>
