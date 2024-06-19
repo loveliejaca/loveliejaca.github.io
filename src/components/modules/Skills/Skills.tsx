@@ -1,7 +1,5 @@
 'use client';
 import React, { FC } from 'react';
-import { gsap } from 'gsap';
-import { useGSAP } from '@gsap/react';
 
 import styles from './Skills.module.scss';
 import Heading from '../../elements/Heading/Heading';
