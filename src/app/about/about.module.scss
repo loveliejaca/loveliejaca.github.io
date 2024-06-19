@@ -78,3 +78,65 @@
 	}
 }
 
+.code {
+	position: relative;
+	overflow: hidden;
+	padding: rem(130) rem(56);
+	color:  $color-1;
+}
+
+.code__list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: rem(56) auto 0;
+	max-width: rem(1350);
+	gap: rem(32);
+
+	@include sm-breakpoint {
+		flex-direction: row;
+	}
+}
+
+.code__card {
+	position: relative;
+	display: flex;
+	width: 100%;
+	aspect-ratio: 3 / 2;
+	border: 1px solid $color-13;
+	padding: rem(16);
+
+	@include sm-breakpoint {
+		width: calc((100% - 32px) / 2);
+		aspect-ratio: 3 / 2.8;
+	}
+	
+	&::before {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-image: url('/assets/card-bg-2.jpg');
+		background-size: cover;
+		background-position: center;
+		top: 0;
+		left: 0;
+		opacity: 0.1;
+	}
+}
+.code__card_inner {
+	position: relative;
+	background-color: $color-13;
+	display: block;
+	height: 100%;
+	width: 100%;
+
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
+}
+

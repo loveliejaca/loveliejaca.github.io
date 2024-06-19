@@ -178,16 +178,3 @@
 	color: $color-6;
 }
 
-.code {
-	position: relative;
-	overflow: hidden;
-	padding: rem(130) rem(56);
-	color:  $color-1;
-}
-
-.code__list {
-	display: flex;
-	margin: rem(56) auto 0;
-	max-width: rem(1280);
-	
-}

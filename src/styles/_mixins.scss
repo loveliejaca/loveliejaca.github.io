@@ -1,0 +1,35 @@
+@mixin xxlg-breakpoint {
+  @media screen and (min-width: $xxlg-desktop) {
+    @content;
+  }
+}
+
+@mixin xlg-breakpoint {
+  @media screen and (min-width: $xlg-desktop) {
+    @content;
+  }
+}
+
+@mixin desktop-breakpoint {
+  @media screen and (min-width: $desktop-1440) {
+    @content;
+  }
+}
+
+@mixin lg-breakpoint {
+  @media screen and (min-width: $lg-desktop) {
+    @content;
+  }
+}
+
+@mixin sm-breakpoint {
+  @media screen and (min-width: $sm-desktop) {
+    @content;
+  }
+}
+
+@mixin tablet-breakpoint {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}

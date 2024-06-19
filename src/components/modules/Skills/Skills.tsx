@@ -1,5 +1,8 @@
-// 'use client';
+'use client';
 import React, { FC } from 'react';
+import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react';
+
 import styles from './Skills.module.scss';
 import Heading from '../../elements/Heading/Heading';
 import { 
@@ -14,11 +17,6 @@ import {
 	GitIcon,
 	PhotoshopIcon
 } from '@/svg/SvgIcons';
-
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
 
 interface IsvgSkillIcons {
 	html: React.JSX.Element;

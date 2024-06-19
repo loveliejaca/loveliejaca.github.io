@@ -134,7 +134,6 @@
 	width: 90vw;
 	height: 90vw;
 	z-index: 1;
-	opacity: 0.5;
 
 	> div:nth-child(1) {
 		border-radius: 50%;
@@ -145,25 +144,25 @@
 }
 
 .circle_dashed {
-	stroke: $color-8;
+	stroke: #6f4d3c;
 	stroke-dasharray: rem(10) rem(15);
 	stroke-width: 1px;
 	transform-origin: center;
-	animation: rotating 80s linear infinite;
+	// animation: rotating 180s linear infinite;
 	opacity: 0;
 }
 
 .circle_dashed_2 {
-	stroke: $color-8;
+	stroke: #6f4d3c;
 	stroke-dasharray: rem(10) rem(15);
 	stroke-width: 1px;
 	transform-origin: center;
-	animation: rotating 100s linear .2s infinite reverse;
+	// animation: rotating 100s linear .2s infinite reverse;
 	opacity: 0;
 }
 
 .circle_solid {
-	stroke: $color-7;
+	stroke: #604c3a;
 	stroke-width: 1px;
 	opacity: 0;
 }
@@ -185,7 +184,8 @@
 
 .planet__saturn_planet {
 	position: relative;
-	background: linear-gradient(to bottom, #fecf4e 1%, #a62a44 50%, #310441 100%);
+	// background: linear-gradient(to bottom, #fecf4e 1%, #a62a44 50%, #310441 100%);
+	background: linear-gradient(to bottom, #967b3f 1%, #652a38 50%, #2f1835 100%);
 	display: block;
 	border-radius: 50%;
 	width: 7vw;
@@ -193,6 +193,7 @@
 	left: 13vw;
 	top: 18vw;
 	overflow: hidden;
+	// animation: rotating 100s linear .2s infinite reverse;
 }
 
 .planet__saturn_ring_before,
@@ -229,6 +230,7 @@
 .planet__earth_planet {
 	position: relative;
 	background: linear-gradient(to bottom, #70a27d 23%, #4552a1 58%, #371a6a 100%);
+	background: linear-gradient(to bottom, #4c6452 23%, #333861 58%, #2e2248 100%);
 	display: block;
 	border-radius: 50%;
 	width: 5vw;

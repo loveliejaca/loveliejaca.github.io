@@ -40,7 +40,7 @@ const Hero:FC<Props> = ({ data }) => {
 				ease: "power4.out",
 				duration: 0.5,
 				stagger: 0.2 
-			}, ">-0.2")
+			}, ">")
 		.to(
 			".heading-text",
 			{ 
@@ -71,6 +71,43 @@ const Hero:FC<Props> = ({ data }) => {
 				duration: 0.8,
 			}, ">"
 		)
+		.add("rotate", ">")
+		.to(
+			".circle-dashed-2",
+			{ 
+				transformOrigin: 'center',
+				rotation:"360", 
+				ease:"linear.easeNone", 
+				repeat:-1,
+				duration: 180,
+			}, "rotate")
+		.to(
+			".circle-dashed",
+			{ 
+				transformOrigin: 'center',
+				rotation:"-360", 
+				ease:"linear.easeNone", 
+				repeat:-1,
+				duration: 150,
+			}, "rotate")
+		.to(
+			".planet-1",
+			{ 
+				transformOrigin: 'center',
+				rotation:"360", 
+				ease:"linear.easeNone", 
+				repeat:-1,
+				duration: 200,
+			}, "rotate")
+			.to(
+				".planet-2",
+				{ 
+					transformOrigin: 'center',
+					rotation:"360", 
+					ease:"linear.easeNone", 
+					repeat:-1,
+					duration: 150,
+				}, "rotate")
 
 	}, {scope: containerRef})
 
@@ -83,14 +120,14 @@ const Hero:FC<Props> = ({ data }) => {
 					<circle className={`circle ${styles.circle_solid}`} cx="455" cy="455" r="220" strokeWidth="1" fill="transparent"/>
 					<circle className={`circle circle-dashed ${styles.circle_dashed_2}`} cx="455" cy="455" r="300" strokeWidth="1" fill="transparent"/>
 					<circle className={`circle ${styles.circle_solid}`} cx="455" cy="455" r="380" strokeWidth="1" fill="transparent"/>
-					<circle className={`circle circle-dashed ${styles.circle_dashed}`} cx="455" cy="455" r="448" strokeWidth="1" fill="transparent"/>
+					<circle className={`circle circle-dashed-2 ${styles.circle_dashed}`} cx="455" cy="455" r="448" strokeWidth="1" fill="transparent"/>
 				</svg>
 
-				<div className={`planet ${styles.planet__earth}`}>
+				<div className={`planet planet-2 ${styles.planet__earth}`}>
 					<div className={styles.planet__earth_planet}></div>
 				</div>
 
-				<div className={`planet ${styles.planet__saturn}`}>
+				<div className={`planet planet-1 ${styles.planet__saturn}`}>
 					<div className={styles.planet__saturn_ring_before}></div>
 					<div className={styles.planet__saturn_planet}></div>
 					<div className={styles.planet__saturn_ring_after}></div>
