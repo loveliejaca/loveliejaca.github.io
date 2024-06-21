@@ -4,8 +4,12 @@
 .about {
 	position: relative;
 	min-height: calc(100vh - 120px);
-	padding: rem(130) rem(56) 0;
+	padding: rem(80) rem(24) 0;
 	color:  $color-1;
+
+	@include sm-breakpoint {
+		padding: rem(130) rem(56) 0;
+	}
 
 	h2, h1 {
 		color:  $color-8 !important;
@@ -14,6 +18,7 @@
 
 .about__section {
 	position: relative;
+	z-index: 1;
 
 	&:not(:last-child) {
 		margin-bottom: rem(56);
@@ -81,7 +86,7 @@
 .code {
 	position: relative;
 	overflow: hidden;
-	padding: rem(130) rem(56);
+	padding: rem(130) rem(56) 0;
 	color:  $color-1;
 }
 

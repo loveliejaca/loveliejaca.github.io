@@ -25,9 +25,6 @@ interface IProjectItem {
 
 const Projects = async () => {
   const dataProjects = await getProjects();
-
-  console.log('dataProjects', dataProjects);
-  
   const projectList = dataProjects ?? [];
 
   return (

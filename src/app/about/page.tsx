@@ -8,6 +8,7 @@ import type { Metadata } from 'next'
 import Heading from '@/components/elements/Heading/Heading';
 import Scorpio from '@/components/elements/Constelation/Scorpio';
 import getCode from '@/api/getCode';
+import getUser from '@/api/getUser';
 
 export const metadata: Metadata = {
   title: 'About',
@@ -25,18 +26,18 @@ interface ICodeItem{
 
 const About = async () => {
   const dataCode = await getCode();
+  const userList = await getUser();
+  const dataUser = userList && userList.find((field:any) => field.fields.id === 'lovely-jaca');
 
   const codeList = dataCode ?? [];
 
-  console.log('dataCode', codeList);
-  
-  
   const data = {
-    name: "Lovely Jaca",
-    email: "jlablab@gmail.com",
-    location: "Cebu City",
-    bio: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    name: `${dataUser?.fields.firstname} ${dataUser?.fields.lastname}`,
+    email: dataUser?.fields.email,
+    location: dataUser?.fields.location,
+    bio: dataUser?.fields.bio
   }
+  
   return (
     <PageLayout>
       <div className={styles.about}>

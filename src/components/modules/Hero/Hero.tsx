@@ -106,7 +106,7 @@ const Hero:FC<Props> = ({ data }) => {
 					rotation:"360", 
 					ease:"linear.easeNone", 
 					repeat:-1,
-					duration: 150,
+					duration: 100,
 				}, "rotate")
 
 	}, {scope: containerRef})
@@ -132,8 +132,6 @@ const Hero:FC<Props> = ({ data }) => {
 					<div className={styles.planet__saturn_planet}></div>
 					<div className={styles.planet__saturn_ring_after}></div>
 				</div>
-
-				
 			</div>
 
 			<div className={styles.hero__content}>
