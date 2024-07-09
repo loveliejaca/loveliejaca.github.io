@@ -58,11 +58,11 @@ overflow: hidden;
 	height: rem(80);
 	border: rem(5) solid $color-6;
 	
-
 	@include tablet-breakpoint {
 		width: rem(120);
 		height: rem(120);
 	}
+
 	svg {
 		height: rem(80);
 
@@ -84,7 +84,7 @@ overflow: hidden;
 	&_wordpress, 
 	&_git {
 		svg {
-			height: rem(60);
+			height: 60%;
 		}
 	}
 
@@ -97,13 +97,13 @@ overflow: hidden;
 
 	&_typescript {
 		svg {
-			height: rem(50);
+			height: 50%;
 		}
 	}
 
 	&_photoshop {
 		svg {
-			height: rem(110);
+			height: 100%;
 		}
 	}
 }

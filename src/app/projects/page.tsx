@@ -19,6 +19,7 @@ interface IProjectItem {
 		id: string;
 		name: string;
     url: string;
+    image: any;
 	}
 }
  
@@ -38,7 +39,7 @@ const Projects = async () => {
           {projectList.map( (project:IProjectItem) => {
             return (
               <div key={project.fields.id} className={styles.projects__item}>
-                  <div className={styles.projects__card_container}>
+                  <a className={styles.projects__card_container} href={project.fields.url} target="_blank">
 
                     <div className={styles.projects__card_front}>
                       <div className={styles.projects__card}>
@@ -58,6 +59,7 @@ const Projects = async () => {
                       <div className={styles.projects__card}>
                         <div className={styles.projects__card_inner}>
                           <div className={styles.projects__card_img}>
+                            <img src={project.fields.image[0]?.url} alt={project.fields.name} />
                           </div>
                           <p className={styles.projects__card_name}>
                             {project.fields.name}
@@ -66,7 +68,7 @@ const Projects = async () => {
                       </div>
                     </div>
 
-                  </div>
+                  </a>
               </div>
             )
           })}
